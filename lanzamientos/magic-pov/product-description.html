@@ -1,0 +1,232 @@
+<style>
+.pov{font-family:inherit;color:#1f2329;line-height:1.55;max-width:820px;margin:0 auto;padding:0 4px}
+.pov *{font-family:inherit;box-sizing:border-box}
+.pov h2{font-size:22px;font-weight:800;line-height:1.22;margin:0 0 10px}
+.pov p{margin:0 0 12px;font-size:15px}
+.pov .pov-media{margin:14px 0}
+.pov .pov-ph{display:flex;align-items:center;justify-content:center;text-align:center;min-height:150px;border:2px dashed #b9a7ef;border-radius:14px;background:#f6f3ff;color:#7a59d6;font-size:13px;font-weight:700;padding:18px}
+.pov .pov-hook{background:linear-gradient(135deg,#6a2cdb,#b026ff);color:#fff;border-radius:14px;padding:16px 18px;text-align:center;margin:6px 0 14px}
+.pov .pov-hook b{font-size:18px;font-weight:800;display:block;line-height:1.3}
+.pov .pov-hook span{font-size:13px;opacity:.95;display:block;margin-top:4px}
+.pov .pov-hook .rt{color:#ffd43b;font-weight:800}
+.pov .pov-trust{display:flex;flex-wrap:wrap;gap:6px;justify-content:center;margin:12px 0}
+.pov .pov-trust span{background:#f0ebff;color:#5b21b6;font-weight:700;font-size:12.5px;border-radius:30px;padding:6px 12px}
+.pov .pov-pain{background:#fff4f2;border-left:5px solid #e03131;border-radius:10px;padding:16px 18px;margin:14px 0}
+.pov .pov-pain h2{color:#c92a2a}
+.pov .pov-agi{font-size:15px;margin:0 0 6px;padding-left:6px}
+.pov .pov-sol{background:#ebfbee;border-left:5px solid #2f9e44;border-radius:10px;padding:16px 18px;margin:14px 0}
+.pov .pov-sol h2{color:#2b8a3e}
+.pov .pov-android{background:#eef6ff;border:2px solid #1d7ceb;border-radius:12px;padding:15px 16px;margin:14px 0;text-align:center}
+.pov .pov-android b{color:#0b5cca;font-size:16px}
+.pov .pov-cta-bar{display:block;background:linear-gradient(135deg,#ff7733,#e8590c);color:#fff;text-align:center;font-weight:800;font-size:16px;border-radius:12px;padding:15px;margin:16px 0;box-shadow:0 6px 16px rgba(232,89,12,.35);line-height:1.3}
+.pov .pov-cta-bar small{display:block;font-weight:600;font-size:12.5px;opacity:.95;margin-top:2px}
+.pov .pov-ben{margin:8px 0}
+.pov .pov-ben .it{display:flex;gap:10px;align-items:flex-start;padding:11px 0;border-bottom:1px solid #eee}
+.pov .pov-ben .em{font-size:22px;flex-shrink:0;line-height:1.2}
+.pov .pov-ben b{display:block;font-size:15px;margin-bottom:2px}
+.pov .pov-ben span{font-size:14px;color:#555}
+.pov .pov-cap{font-size:12.5px;color:#777;text-align:center;margin:6px 0 0}
+.pov .pov-include{background:#f7f5fb;border:1px dashed #8b5cf6;border-radius:12px;padding:14px;margin:14px 0}
+.pov .pov-include h2{font-size:17px;margin-bottom:8px}
+.pov .pov-include ul{list-style:none;margin:0;padding:0}
+.pov .pov-include li{font-size:14px;padding:5px 0}
+.pov table.pov-vs{width:100%;border-collapse:collapse;margin:10px 0;font-size:14px}
+.pov table.pov-vs th{background:#5b21b6;color:#fff;padding:10px;text-align:left}
+.pov table.pov-vs td{padding:9px 10px;border-bottom:1px solid #eee;vertical-align:top}
+.pov table.pov-vs td.no{color:#b02020}
+.pov table.pov-vs td.si{color:#2b8a3e;font-weight:600}
+.pov .pov-spec{display:grid;grid-template-columns:1fr 1fr;gap:8px;margin:10px 0}
+.pov .pov-spec div{background:#f5f7fb;border-radius:8px;padding:10px 12px;font-size:13.5px}
+.pov .pov-spec b{display:block;color:#5b21b6;font-size:12px;text-transform:uppercase;letter-spacing:.02em;margin-bottom:2px}
+.pov .pov-rsum{background:#f0f2f5;border-radius:14px;padding:16px;text-align:center;margin:14px 0}
+.pov .pov-rsum .big{font-size:40px;font-weight:900;color:#050505;line-height:1}
+.pov .pov-rsum .st{color:#f5a623;font-size:22px;letter-spacing:2px;margin:4px 0}
+.pov .pov-rsum .lb{font-size:13px;color:#65676b}
+.pov .fbp{background:#fff;border:1px solid #e4e6eb;border-radius:12px;margin:14px 0;overflow:hidden;box-shadow:0 1px 2px rgba(0,0,0,.08)}
+.pov .fbp-h{display:flex;align-items:center;gap:10px;padding:12px 14px 6px}
+.pov .fbp-av{width:44px;height:44px;border-radius:50%;object-fit:cover;flex-shrink:0;background:#dcd2f5}
+.pov .fbp-n{flex:1;min-width:0}
+.pov .fbp-n b{font-size:14.5px;color:#050505;display:inline-flex;align-items:center;gap:4px}
+.pov .fbp-n .vf{color:#1877f2;font-size:13px}
+.pov .fbp-n em{font-size:12px;color:#65676b;font-style:normal;display:block}
+.pov .fbp-dots{color:#65676b;font-weight:800;font-size:18px}
+.pov .fbp-txt{padding:2px 14px 10px;font-size:14.5px;color:#050505;line-height:1.45}
+.pov .fbp-ph{min-height:150px;border-top:1px solid #eee;border-bottom:1px solid #eee;display:flex;align-items:center;justify-content:center;background:#f6f3ff;color:#7a59d6;font-size:12.5px;font-weight:700;text-align:center;padding:14px}
+.pov .fbp-stats{display:flex;align-items:center;padding:9px 14px;font-size:13px;color:#65676b}
+.pov .fbp-stats .rx{font-size:15px;margin-right:5px}
+.pov .fbp-stats .cm{margin-left:auto}
+.pov .fbp-acts{display:flex;border-top:1px solid #e4e6eb}
+.pov .fbp-acts span{flex:1;text-align:center;padding:9px 4px;font-size:13.5px;color:#65676b;font-weight:600}
+.pov .pov-warranty{background:#0b3d2e;color:#eafff4;border-radius:14px;padding:20px 18px;margin:16px 0;text-align:center}
+.pov .pov-seal{width:104px;height:104px;border-radius:50%;background:#093024;border:3px solid #69db7c;color:#69db7c;display:flex;flex-direction:column;align-items:center;justify-content:center;margin:0 auto 12px;line-height:1.05}
+.pov .pov-seal b{font-size:26px;font-weight:900}
+.pov .pov-seal small{font-size:10px;letter-spacing:.04em;color:#eafff4}
+.pov .pov-warranty b.g{color:#69db7c}
+.pov .pov-offer{background:#0f1115;color:#fff;border-radius:14px;padding:22px 18px;margin:18px 0;text-align:center}
+.pov .pov-badge{display:inline-block;background:#e03131;color:#fff;font-weight:800;font-size:13px;padding:6px 14px;border-radius:30px;animation:povb 1.4s ease-in-out infinite}
+@keyframes povb{0%,100%{transform:translateY(0)}50%{transform:translateY(-5px)}}
+.pov .pov-anchor{color:#9aa0a6;text-decoration:line-through;font-size:20px;margin:12px 0 0}
+.pov .pov-real{font-size:42px;font-weight:900;color:#51cf66;line-height:1.1;margin:2px 0}
+.pov .pov-save{color:#ffd43b;font-weight:700;font-size:15px;margin:0 0 12px}
+.pov .pov-packs{display:flex;flex-direction:column;gap:8px;margin:14px 0 4px;text-align:left}
+.pov .pov-packs .pk{display:flex;justify-content:space-between;align-items:center;background:#1b1e25;border:1px solid #2a2f3a;border-radius:10px;padding:11px 13px;font-size:14px}
+.pov .pov-packs .pk.best{border-color:#ffd43b;background:#23210f}
+.pov .pov-packs .pk b{font-size:14.5px}
+.pov .pov-packs .pk .pp{color:#51cf66;font-weight:800}
+.pov .pov-packs .pk .tag{display:block;font-size:11px;color:#ffd43b;font-weight:700}
+.pov .pov-perks{font-size:14px;line-height:1.9;margin:8px 0 0}
+.pov .pov-urg{background:#fff3bf;color:#a8730a;font-weight:700;font-size:13.5px;border-radius:8px;padding:9px;margin-top:12px;animation:povk 1.2s step-end infinite}
+@keyframes povk{50%{opacity:.45}}
+.pov details.pov-faq{border-bottom:1px solid #e3e3e3}
+.pov details.pov-faq summary{list-style:none;cursor:pointer;padding:13px 2px;font-weight:700;font-size:15px;display:flex;justify-content:space-between;gap:10px}
+.pov details.pov-faq summary::-webkit-details-marker{display:none}
+.pov details.pov-faq summary::after{content:"+";color:#5b21b6;font-weight:800;font-size:20px}
+.pov details.pov-faq[open] summary::after{content:"\2013"}
+.pov details.pov-faq .a{padding:0 2px 14px;font-size:14px;color:#555}
+.pov .pov-cta{text-align:center;background:#ebfbee;border-radius:12px;padding:18px;margin:16px 0}
+.pov .pov-cta b{font-size:16px}
+.pov .pov-wa{text-align:center;font-size:13px;color:#5b21b6;font-weight:700;margin:10px 0}
+@media(max-width:640px){.pov .pov-real{font-size:36px}.pov .pov-spec{grid-template-columns:1fr}}
+</style>
+<div class="pov">
+<div class="pov-hook">
+<b>🎥 Grabá en POV con las manos 100% libres</b> <span class="rt">★★★★★ 4.8/5</span> <span>Mirá lo fácil que es ponértelo 👇</span>
+</div>
+<div class="pov-media"><div class="pov-ph">📷 VIDEO HERO — alguien poniéndose el soporte y grabando en POV (1ª persona). Reemplazá este espacio por tu video.</div></div>
+<div class="pov-trust">
+<span>🇧🇴 Empresa boliviana</span><span>🚚 Envío GRATIS</span><span>💵 Pagá al recibir</span><span>🛡️ Garantía 30 días</span>
+</div>
+<div class="pov-pain">
+<h2>Para grabar lo que hacés… siempre necesitás a alguien más</h2>
+<p>Querés mostrar tu receta, tu emprendimiento o tu día a día. Pero no te alcanzan las manos. Le pedís a alguien que te grabe… y nunca está cuando lo necesitás. El trípode se queda quieto, vos te movés, y la toma se pierde. La pregunta no es <b>si</b> vas a poder grabar solo/a… es <b>cuándo</b> vas a dejar de depender de los demás.</p>
+</div>
+<p class="pov-agi">😤 Acomodás el celular, volvés atrás, repetís la toma 10 veces.</p>
+<p class="pov-agi">🤲 Tenés las manos ocupadas y el momento bueno se te escapa.</p>
+<p class="pov-agi">📹 A pulso tiembla todo y el video se ve improvisado.</p>
+<p class="pov-agi"><b>Pero se puede solucionar HOY 👇</b></p>
+<div class="pov-sol">
+<h2>✅ Ponételo en 1 segundo y grabá solo/a</h2>
+<p>El <b>Soporte de Cuello Magnético POV®</b> se cuelga del cuello y sostiene tu celular firme a la altura del pecho. Lo pegás por imán en 1 segundo y listo: grabás desde tu propia perspectiva, con las dos manos libres, sin pedirle nada a nadie.</p>
+</div>
+<div class="pov-media"><div class="pov-ph">📷 GIF/Foto — manos libres cocinando / mostrando un producto mientras el soporte graba</div></div>
+<div class="pov-android">
+<b>📱 Funciona en TU celular — iPhone y Android</b>
+<p style="margin:6px 0 0;font-size:14px">Trae <b>anillo magnético adhesivo incluido</b>: si tu celular no es MagSafe, le pegás el anillo una vez y queda magnético para siempre. No importa la marca.</p>
+</div>
+<div class="pov-cta-bar">👆 TOCÁ "COMPRAR" ARRIBA<small>🚚 Envío GRATIS · 💵 Pagás al recibir en tu casa</small>
+</div>
+<h2>¿Qué cambia desde el primer día?</h2>
+<div class="pov-ben">
+<div class="it"><span class="em">🙌</span><div><b>Grabás solo/a, sin pedir favores</b><span>Nunca más depender de que alguien tenga tiempo para filmarte.</span></div></div>
+<div class="it"><span class="em">🤲</span><div><b>Las dos manos 100% libres</b><span>Cociná, mostrá, trabajá o jugá con tus hijos mientras grabás.</span></div></div>
+<div class="it"><span class="em">🎥</span><div><b>Video en POV que engancha</b><span>Tu audiencia ve lo que vos ves. Contenido inmersivo de primera persona.</span></div></div>
+<div class="it"><span class="em">⚡</span><div><b>Se pone y se saca en 1 segundo</b><span>Sistema magnético: pegás el celular y listo. Sin amarrar ni atornillar.</span></div></div>
+<div class="it"><span class="em">🎯</span><div><b>Queda firme y estable</b><span>Sujeción magnética potente: el celular no baila, la toma se ve pareja.</span></div></div>
+<div class="it"><span class="em">🔄</span><div><b>Horizontal, vertical y en ángulo</b><span>El brazo se ajusta para TikTok, Reels y YouTube sin volver a empezar.</span></div></div>
+<div class="it"><span class="em">😌</span><div><b>Cómodo, no pesa en el cuello</b><span>Aluminio liviano + silicona suave. Lo usás un buen rato sin molestia.</span></div></div>
+</div>
+<h2>Un soporte, mil formas de usarlo</h2>
+<div class="pov-ben">
+<div class="it"><span class="em">🍳</span><div><b>Cocina y recetas</b><span>Grabá tus manos cocinando sin pedirle a nadie.</span></div></div>
+<div class="it"><span class="em">💄</span><div><b>Belleza y tutoriales</b><span>Maquillaje, peinados, manualidades en primera persona.</span></div></div>
+<div class="it"><span class="em">🛵</span><div><b>Moto, bici y outdoor</b><span>POV en movimiento sin soltar el manubrio.</span></div></div>
+<div class="it"><span class="em">🏋️</span><div><b>Gimnasio y deporte</b><span>Registrá tus rutinas sin trípode ni ayudante.</span></div></div>
+<div class="it"><span class="em">🛠️</span><div><b>Tu trabajo u oficio</b><span>Mostrá cómo lo hacés y vendé más con tu contenido.</span></div></div>
+<div class="it"><span class="em">👶</span><div><b>Momentos en familia</b><span>Grabá a tus hijos con las manos libres para cargarlos.</span></div></div>
+</div>
+<div class="pov-media"><div class="pov-ph">📷 Montaje de 4-6 usos distintos (cocina, moto, gym, belleza, trabajo, familia)</div></div>
+<div class="pov-include">
+<h2>📦 Tu pedido incluye</h2>
+<ul>
+<li>✅ Soporte de Cuello Magnético POV® (brazo articulado)</li>
+<li>✅ Anillo magnético adhesivo (para celulares sin MagSafe)</li>
+<li>✅ Empaque de protección</li>
+<li>✅ Garantía de 30 días</li>
+<li>✅ Soporte por WhatsApp</li>
+</ul>
+</div>
+<h2>Listo para grabar en 3 pasos</h2>
+<p>1️⃣ Colgátelo en el cuello.  2️⃣ Pegá tu celular al imán (o al anillo incluido).  3️⃣ Ajustá el ángulo y grabá. <b>En menos de 10 segundos.</b></p>
+<div class="pov-media"><div class="pov-ph">📷 3 pasos en imagen: colgar · pegar celular · grabar</div></div>
+<h2>Soporte POV vs. seguir como estás</h2>
+<table class="pov-vs">
+<tbody>
+<tr><th>Otras formas</th><th>Soporte de Cuello Magnético POV®</th></tr>
+<tr><td class="no">✗ Pedirle a alguien que te grabe</td><td class="si">✓ Grabás solo/a cuando quieras</td></tr>
+<tr><td class="no">✗ Trípode: se queda quieto, no te sigue</td><td class="si">✓ Se mueve con vos, POV real</td></tr>
+<tr><td class="no">✗ Palo selfie: te ocupa una mano</td><td class="si">✓ Las dos manos libres</td></tr>
+<tr><td class="no">✗ A pulso: tiembla y se ve amateur</td><td class="si">✓ Firme y estable al pecho</td></tr>
+<tr><td class="no">✗ Solo sirve para iPhone</td><td class="si">✓ iPhone y Android (anillo incluido)</td></tr>
+<tr><td class="no">✗ Pagar por adelantado y cruzar los dedos</td><td class="si">✓ Pagás al recibir, garantía 30 días</td></tr>
+</tbody>
+</table>
+<h2>Especificaciones</h2>
+<div class="pov-spec">
+<div><b>Sujeción</b>Magnética MagSafe + anillo adhesivo incluido</div>
+<div><b>Compatibilidad</b>iPhone y Android (cualquier celular)</div>
+<div><b>Brazo</b>Articulado y ajustable — multi-ángulo</div>
+<div><b>Material</b>Aleación de aluminio + silicona suave</div>
+<div><b>Uso</b>POV manos libres: cocina, moto, gym, vlogs</div>
+<div><b>Incluye</b>Soporte + anillo magnético + empaque</div>
+</div>
+<div class="pov-media"><div class="pov-ph">📷 Close-up de calidad: brazo de aluminio + imán + anillo MagSafe</div></div>
+<h2>Lo que dicen nuestros clientes</h2>
+<div class="pov-rsum">
+<div class="big">4.8</div>
+<div class="st">★★★★★</div>
+<div class="lb">Opiniones de clientes en Bolivia 🇧🇴</div>
+</div>
+<div class="fbp">
+<div class="fbp-h"><div class="fbp-av"></div><div class="fbp-n"><b>Daniela R. <span class="vf">✔</span></b><em>Santa Cruz · hace 2 semanas</em></div><div class="fbp-dots">⋯</div></div>
+<div class="fbp-txt">Lo uso para grabar mis recetas y <b>ya no le pido a nadie que me grabe</b>. Se pone en segundos y el celular queda firme. Lo mejor que compré para mi emprendimiento. ⭐⭐⭐⭐⭐</div>
+<div class="fbp-ph">📷 Foto real de clienta usándolo (reemplazar)</div>
+<div class="fbp-stats"><span class="rx">👍❤️</span><span>1,2 mil</span><span class="cm">88 comentarios</span></div>
+<div class="fbp-acts"><span>👍 Me gusta</span><span>💬 Comentar</span><span>↪️ Compartir</span></div>
+</div>
+<div class="fbp">
+<div class="fbp-h"><div class="fbp-av"></div><div class="fbp-n"><b>Marco T. <span class="vf">✔</span></b><em>Cochabamba · hace 1 mes</em></div><div class="fbp-dots">⋯</div></div>
+<div class="fbp-txt">Lo compré con dudas pensando que se iba a caer el cel. Nada que ver: <b>queda firme aunque me mueva</b>. Lo uso en la moto y para mostrar mi trabajo. Re práctico. ⭐⭐⭐⭐⭐</div>
+<div class="fbp-ph">📷 Foto real de cliente usándolo (reemplazar)</div>
+<div class="fbp-stats"><span class="rx">👍❤️</span><span>934</span><span class="cm">41 comentarios</span></div>
+<div class="fbp-acts"><span>👍 Me gusta</span><span>💬 Comentar</span><span>↪️ Compartir</span></div>
+</div>
+<div class="fbp">
+<div class="fbp-h"><div class="fbp-av"></div><div class="fbp-n"><b>Gabriela P. <span class="vf">✔</span></b><em>La Paz · hace 2 meses</em></div><div class="fbp-dots">⋯</div></div>
+<div class="fbp-txt">Tengo Android y pensé que no me iba a servir. Con el <b>anillo que viene incluido</b> quedó magnético al toque. Ahora hago mis Reels yo sola. Pagué al recibir, todo perfecto. ⭐⭐⭐⭐⭐</div>
+<div class="fbp-ph">📷 Foto real de clienta usándolo (reemplazar)</div>
+<div class="fbp-stats"><span class="rx">👍❤️</span><span>1,8 mil</span><span class="cm">133 comentarios</span></div>
+<div class="fbp-acts"><span>👍 Me gusta</span><span>💬 Comentar</span><span>↪️ Compartir</span></div>
+</div>
+<p class="pov-cap">Sumate a los creadores bolivianos que ya graban con las manos libres</p>
+<div class="pov-warranty">
+<div class="pov-seal"><b>30</b><small>DÍAS</small><small>GARANTÍA</small></div>
+<p><b class="g">Probalo sin riesgo.</b> Si al recibirlo no te convence, llega dañado o tiene defecto, te devolvemos el 100%. Sin preguntas, sin trámites. O quedás satisfecho, o te devolvemos tu plata.</p>
+</div>
+<div class="pov-offer">
+<span class="pov-badge">🔥 OFERTA DE LANZAMIENTO</span>
+<p class="pov-anchor">Bs. 558</p>
+<p class="pov-real">Bs. 279</p>
+<p class="pov-save">Ahorrás Bs. 279 hoy (50% OFF)</p>
+<div class="pov-packs">
+<div class="pk"><div><b>🎥 1 Soporte POV</b></div><div class="pp">Bs. 279</div></div>
+<div class="pk best"><div><b>🔥 2 Soportes</b><span class="tag">⭐ MÁS ELEGIDO · 10% OFF</span></div><div class="pp">Bs. 502</div></div>
+<div class="pk"><div><b>💰 3 Soportes</b><span class="tag">Máximo ahorro · 15% OFF</span></div><div class="pp">Bs. 711</div></div>
+</div>
+<p class="pov-perks">🚚 Envío GRATIS a toda Bolivia<br>💵 Pagás al recibir (contra entrega)<br>🛡️ Garantía de 30 días<br>💬 Soporte por WhatsApp</p>
+<div class="pov-urg">⚠️ Stock por lotes — al agotarse vuelve a Bs. 558</div>
+</div>
+<div class="pov-cta-bar">🛒 PEDILO AHORA — ENVÍO GRATIS<small>💵 Pagás al recibir · 🛡️ Garantía 30 días</small>
+</div>
+<h2>Preguntas frecuentes</h2>
+<details class="pov-faq"><summary>¿Sirve para mi celular Android?</summary><div class="a">Sí. Funciona con iPhone (MagSafe) y con cualquier Android gracias al <b>anillo magnético adhesivo incluido</b>. Lo pegás una vez a tu celular o funda y queda listo.</div></details>
+<details class="pov-faq"><summary>¿Se cae el celular?</summary><div class="a">No se cae con el uso normal. La sujeción magnética es potente y el celular queda firme al pecho, incluso si te movés mientras grabás.</div></details>
+<details class="pov-faq"><summary>¿Es incómodo o pesa en el cuello?</summary><div class="a">Es liviano (aluminio) y la parte que toca el cuello es de silicona suave. Está pensado para usarlo un buen rato sin molestia.</div></details>
+<details class="pov-faq"><summary>¿Para qué lo puedo usar?</summary><div class="a">Cocina y recetas, belleza y tutoriales, gimnasio, moto y bici, mostrar tu trabajo, grabar a tus hijos, TikTok, Reels y vlogs. Donde tengas las manos ocupadas, te sirve.</div></details>
+<details class="pov-faq"><summary>¿Puedo pagar al recibir?</summary><div class="a">Sí. Trabajamos con pago contra entrega y envío gratis a toda Bolivia. Pagás cuando el producto llega a tu puerta.</div></details>
+<details class="pov-faq"><summary>¿Cuánto tarda en llegar?</summary><div class="a">Santa Cruz: el mismo día (pedidos antes de las 4 PM). La Paz, Cochabamba y El Alto: 24 a 48 horas. Resto de Bolivia: 2 a 5 días hábiles. Envío GRATIS siempre.</div></details>
+<div class="pov-cta">
+<p><b>Cada día sin él es contenido que no grabaste por depender de alguien.</b></p>
+<p>👆 Hacé clic en <b>Comprar</b> y recibilo en tu casa.</p>
+</div>
+<p class="pov-wa">💬 ¿Tenés dudas? Escribinos al WhatsApp 74171116</p>
+</div>
