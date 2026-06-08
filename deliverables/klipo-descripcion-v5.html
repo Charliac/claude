@@ -1,0 +1,456 @@
+<style>
+/* ============================================ */
+/* PALETA CHARLIAC OFICIAL — Klipo v5 (P.A.S.B.V.O.C.) */
+/* ============================================ */
+.kp {
+  --kp-brand:#02175d; --kp-brand-light:#264EF1; --kp-brand-soft:#e8ecf9; --kp-brand-pale:#f4f6fc;
+  --kp-red:#FF0000; --kp-red-soft:#fff4f4; --kp-red-dark:#c10000;
+  --kp-orange:#da5e0e; --kp-orange-light:#ff9c00; --kp-orange-soft:#ffedd5; --kp-orange-pale:#fff7ed;
+  --kp-green:#166534; --kp-green-light:#25D366; --kp-green-soft:#f0fdf4; --kp-green-pale:#dcfce7;
+  --kp-yellow:#ffd93d; --kp-yellow-soft:#fffbeb;
+  --kp-text:#121212; --kp-text-soft:#4a4a4a; --kp-text-muted:#6b7280; --kp-border:#e5e7eb;
+  --kp-bg:#ffffff; --kp-bg-soft:#f5f5f5; --kp-bg-cream:#FDFBF7;
+  font-family:inherit; max-width:720px; margin:0 auto; line-height:1.6; color:var(--kp-text);
+}
+.kp *{box-sizing:border-box;}
+.kp h1,.kp h2,.kp h3{font-family:inherit;color:var(--kp-text);}
+.kp h2{font-size:26px;margin:0 0 14px;line-height:1.2;letter-spacing:-0.3px;font-weight:800;}
+.kp h3{font-size:19px;margin:0 0 10px;font-weight:700;}
+.kp p{margin:0 0 14px;font-size:15.5px;}
+.kp-sec{padding:28px 22px;border-radius:20px;margin:24px 0;}
+
+/* HERO */
+.kp-bigidea{background:linear-gradient(135deg,#02175d 0%,#051e7a 100%);color:#fff;padding:36px 26px;border-radius:22px;text-align:center;margin:0 0 22px;position:relative;overflow:hidden;}
+.kp-bigidea::before{content:"";position:absolute;top:-50%;left:-50%;width:200%;height:200%;background:radial-gradient(circle,rgba(218,94,14,0.12) 0%,transparent 60%);}
+.kp-bigidea-tag{display:inline-block;background:rgba(255,255,255,0.15);color:var(--kp-orange-light);padding:6px 14px;border-radius:999px;font-size:11px;font-weight:800;letter-spacing:1.5px;margin-bottom:18px;position:relative;border:1px solid rgba(255,156,0,0.3);}
+.kp-bigidea h1{color:#fff;font-size:33px;line-height:1.15;margin:0 0 14px;font-weight:900;letter-spacing:-1px;position:relative;}
+.kp-bigidea h1 .kp-highlight{color:var(--kp-orange-light);}
+.kp-bigidea-sub{font-size:16px;opacity:0.92;max-width:480px;margin:0 auto 18px;position:relative;line-height:1.55;}
+.kp-bigidea-stars{color:var(--kp-orange-light);font-size:18px;letter-spacing:2px;position:relative;}
+.kp-bigidea-rating{font-size:13.5px;opacity:0.85;margin-top:4px;position:relative;}
+.kp-bigidea-price{display:inline-flex;gap:12px;align-items:baseline;margin-top:20px;padding:14px 22px;background:rgba(255,255,255,0.1);border-radius:14px;position:relative;border:1px solid rgba(255,255,255,0.15);}
+.kp-bigidea-price s{font-size:16px;opacity:0.55;}
+.kp-bigidea-price b{font-size:30px;color:var(--kp-orange-light);font-weight:900;}
+.kp-bigidea-price span{font-size:11px;background:var(--kp-red);color:#fff;padding:4px 10px;border-radius:999px;font-weight:800;letter-spacing:0.5px;}
+
+/* USP STRIP */
+.kp-uspstrip{display:grid;grid-template-columns:1fr 1fr 1fr 1fr;gap:8px;padding:18px;background:var(--kp-bg);border:1.5px solid var(--kp-brand-soft);border-radius:16px;margin:0 0 22px;text-align:center;}
+.kp-uspstrip>div{padding:4px 2px;}
+.kp-uspstrip .kp-emoji{font-size:26px;display:block;margin-bottom:6px;}
+.kp-uspstrip span{font-size:12px;font-weight:700;color:var(--kp-brand);line-height:1.3;display:block;}
+
+/* TL;DR */
+.kp-tldr{background:linear-gradient(135deg,var(--kp-brand-pale) 0%,var(--kp-brand-soft) 100%);padding:24px 22px;border-radius:18px;border-left:5px solid var(--kp-brand);margin:0 0 22px;}
+.kp-tldr h3{color:var(--kp-brand);font-size:14px;margin-bottom:12px;text-transform:uppercase;letter-spacing:1.5px;font-weight:800;}
+.kp-tldr ul{margin:0;padding-left:22px;font-size:14.5px;line-height:1.75;color:var(--kp-text-soft);}
+.kp-tldr ul li{margin-bottom:4px;}
+.kp-tldr ul li b{color:var(--kp-brand);font-weight:700;}
+
+/* PROBLEMA / AGITACIÓN */
+.kp-prob{background:linear-gradient(180deg,var(--kp-red-soft) 0%,#ffe8e3 100%);border-left:5px solid var(--kp-red);}
+.kp-prob h2{color:var(--kp-red-dark);}
+.kp-prob .kp-quote{font-style:italic;font-size:17px;font-weight:700;color:var(--kp-red-dark);padding:16px 18px;background:rgba(255,255,255,0.75);border-radius:12px;margin:14px 0 0;border-left:3px solid var(--kp-red);}
+.kp-agit{margin:16px 0 0;padding:16px 18px;background:rgba(255,255,255,0.6);border-radius:12px;}
+.kp-agit p{margin:0 0 6px;font-weight:600;color:var(--kp-red-dark);font-size:15.5px;}
+.kp-agit p.kp-agit-last{margin:10px 0 0;font-weight:800;color:var(--kp-brand);}
+
+/* SOLUCIÓN */
+.kp-sol{background:linear-gradient(180deg,var(--kp-brand-pale) 0%,var(--kp-brand-soft) 100%);border-left:5px solid var(--kp-brand);}
+.kp-sol h2{color:var(--kp-brand);}
+.kp-sol .kp-bigidea-line{font-size:22px;font-weight:900;color:var(--kp-brand);padding:16px;background:rgba(255,255,255,0.7);border-radius:12px;text-align:center;margin:14px 0 0;line-height:1.3;border:1px dashed var(--kp-brand-light);}
+
+/* 3 PASOS */
+.kp-pasos{display:grid;grid-template-columns:1fr 1fr 1fr;gap:12px;margin:20px 0;}
+.kp-paso{text-align:center;padding:18px 12px;background:var(--kp-bg);border-radius:14px;border:1.5px solid var(--kp-brand-soft);}
+.kp-paso-num{display:inline-block;width:36px;height:36px;line-height:36px;background:var(--kp-brand);color:#fff;border-radius:50%;font-weight:900;margin-bottom:10px;font-size:16px;}
+.kp-paso b{display:block;font-size:14px;margin-bottom:6px;color:var(--kp-text);}
+.kp-paso span{font-size:12.5px;color:var(--kp-text-soft);line-height:1.4;display:block;}
+
+/* FUTURE PACING */
+.kp-future{background:linear-gradient(135deg,var(--kp-orange) 0%,var(--kp-orange-light) 100%);color:#fff;padding:30px 24px;border-radius:20px;margin:24px 0;}
+.kp-future h2{color:#fff;font-size:24px;}
+.kp-future p{font-size:15.5px;line-height:1.6;opacity:0.97;}
+.kp-future .kp-time{display:inline-block;background:rgba(255,255,255,0.2);padding:5px 14px;border-radius:999px;font-size:13px;font-weight:700;margin-bottom:14px;letter-spacing:0.3px;}
+
+/* MID-CTA */
+.kp-midcta{text-align:center;padding:22px 18px;background:var(--kp-orange-pale);border-radius:16px;margin:22px 0;border:2px dashed var(--kp-orange);}
+.kp-midcta p{font-size:15px;font-weight:700;margin-bottom:6px;color:var(--kp-text);}
+.kp-midcta .kp-arrow{font-size:28px;color:var(--kp-red);animation:kpbounce 1.6s infinite;}
+.kp-midcta-price{font-size:24px;font-weight:900;color:var(--kp-brand);margin:6px 0;}
+.kp-midcta-price s{color:var(--kp-text-muted);font-weight:600;font-size:17px;margin-right:8px;}
+
+/* BENEFICIOS */
+.kp-benef{background:var(--kp-bg);border:1.5px solid var(--kp-border);padding:18px;border-radius:16px;margin-bottom:12px;display:flex;gap:16px;align-items:flex-start;}
+.kp-benef-icon{font-size:32px;flex-shrink:0;line-height:1;width:52px;height:52px;background:var(--kp-brand-pale);border-radius:12px;display:flex;align-items:center;justify-content:center;}
+.kp-benef b{display:block;font-size:16px;margin-bottom:4px;color:var(--kp-text);font-weight:800;}
+.kp-benef span{font-size:14.5px;color:var(--kp-text-soft);line-height:1.55;}
+
+/* TABLA VS */
+.kp-table-wrap{overflow-x:auto;margin:14px 0;border-radius:16px;border:1.5px solid var(--kp-border);}
+.kp-table{width:100%;border-collapse:collapse;font-size:14px;background:var(--kp-bg);}
+.kp-table thead th{background:var(--kp-brand);color:#fff;padding:14px 12px;text-align:left;font-weight:800;font-size:13.5px;}
+.kp-table thead th:first-child{color:#ffb4b4;}
+.kp-table thead th:last-child{color:var(--kp-orange-light);}
+.kp-table td{padding:13px 12px;border-bottom:1px solid var(--kp-border);vertical-align:top;}
+.kp-table td:first-child{color:var(--kp-text-muted);}
+.kp-table td:last-child{color:var(--kp-brand);font-weight:700;}
+.kp-table tr:last-child td{border-bottom:none;}
+.kp-table tbody tr:nth-child(even){background:var(--kp-bg-soft);}
+
+/* OBJECIONES */
+.kp-obj{background:var(--kp-orange-pale);border:2px solid var(--kp-orange);border-radius:18px;padding:22px;margin:22px 0;}
+.kp-obj h3{color:var(--kp-orange);margin-bottom:14px;}
+.kp-obj-q{font-weight:800;color:var(--kp-brand);font-size:15px;margin-top:16px;margin-bottom:6px;}
+.kp-obj-q::before{content:"🤔 ";}
+.kp-obj-a{font-size:14.5px;line-height:1.55;color:var(--kp-text-soft);padding-left:26px;margin-bottom:4px;}
+
+/* SOCIAL PROOF */
+.kp-social{background:var(--kp-bg);border:2px solid var(--kp-brand);padding:24px 22px;border-radius:18px;}
+.kp-social h3{color:var(--kp-brand);}
+.kp-social-stats{display:grid;grid-template-columns:1fr 1fr 1fr;gap:12px;margin-top:16px;text-align:center;}
+.kp-social-stat{padding:14px 8px;background:var(--kp-brand-pale);border-radius:12px;}
+.kp-social-stat b{display:block;font-size:24px;color:var(--kp-brand);line-height:1;font-weight:900;}
+.kp-social-stat span{font-size:12px;color:var(--kp-text-soft);margin-top:6px;display:block;}
+.kp-social-extra{display:flex;gap:8px;margin-top:16px;flex-wrap:wrap;justify-content:center;}
+.kp-social-extra span{background:var(--kp-green-soft);color:var(--kp-green);padding:6px 12px;border-radius:999px;font-size:12px;font-weight:700;border:1px solid var(--kp-green-pale);}
+
+/* SPECS */
+.kp-specs{background:var(--kp-bg-soft);padding:20px;border-radius:16px;}
+.kp-specs div{padding:11px 0;border-bottom:1px dashed var(--kp-border);font-size:14px;display:flex;justify-content:space-between;gap:10px;}
+.kp-specs div:last-child{border-bottom:none;}
+.kp-specs span{color:var(--kp-text-muted);}
+.kp-specs b{color:var(--kp-brand);text-align:right;font-weight:700;}
+
+/* GARANTÍA */
+.kp-garantia{background:linear-gradient(135deg,#064e2a 0%,#0a7a3f 60%,#0d8c47 100%);color:#fff;padding:36px 24px 32px;border-radius:22px;text-align:center;margin:24px 0;position:relative;overflow:hidden;box-shadow:0 8px 32px rgba(6,78,42,0.25);}
+.kp-garantia>*{position:relative;z-index:1;}
+.kp-garantia .kp-sello{display:inline-flex;flex-direction:column;align-items:center;justify-content:center;width:110px;height:110px;background:#fff;border-radius:50%;margin-bottom:18px;box-shadow:0 0 0 6px rgba(255,255,255,0.18),0 0 0 12px rgba(255,255,255,0.08),0 8px 28px rgba(0,0,0,0.35);line-height:1;}
+.kp-garantia .kp-sello-num{font-size:38px;font-weight:900;color:#064e2a;letter-spacing:-1.5px;line-height:1;}
+.kp-garantia .kp-sello-label{font-size:11px;font-weight:800;color:#064e2a;letter-spacing:2.5px;margin-top:4px;text-transform:uppercase;}
+.kp-garantia .kp-check-tag{display:inline-block;background:rgba(255,255,255,0.18);color:#fff;font-size:11px;font-weight:800;letter-spacing:1.5px;padding:6px 14px;border-radius:999px;margin-bottom:14px;border:1px solid rgba(255,255,255,0.3);}
+.kp-garantia h3{color:#fff;font-size:26px;margin-bottom:12px;font-weight:900;letter-spacing:-0.5px;text-shadow:0 2px 8px rgba(0,0,0,0.2);}
+.kp-garantia p{font-size:15.5px;color:#fff;margin-bottom:18px;max-width:460px;margin-left:auto;margin-right:auto;line-height:1.6;}
+.kp-garantia p b{color:var(--kp-yellow);font-weight:800;}
+.kp-garantia .kp-bold-promise{font-weight:800;color:#064e2a;padding:12px 22px;background:var(--kp-yellow);border-radius:999px;display:inline-block;margin-top:4px;letter-spacing:0.8px;box-shadow:0 4px 14px rgba(255,217,61,0.4);text-transform:uppercase;font-size:12.5px;}
+
+/* ESCALERA DE PACKS */
+.kp-packs{display:grid;grid-template-columns:1fr;gap:16px;margin:10px 0 6px;}
+.kp-pack{position:relative;border:2px solid var(--kp-border);border-radius:16px;padding:20px 18px 18px;background:var(--kp-bg);}
+.kp-pack-best{border-color:var(--kp-orange);box-shadow:0 8px 26px rgba(218,94,14,0.16);}
+.kp-pack-max{border-color:var(--kp-green);}
+.kp-pack-ribbon{position:absolute;top:-12px;left:50%;transform:translateX(-50%);background:var(--kp-orange);color:#fff;font-size:11px;font-weight:800;letter-spacing:0.5px;padding:4px 14px;border-radius:999px;white-space:nowrap;}
+.kp-pack-max .kp-pack-ribbon{background:var(--kp-green);}
+.kp-pack-top{display:flex;align-items:baseline;justify-content:space-between;gap:10px;}
+.kp-pack-qty{font-size:18px;font-weight:900;color:var(--kp-brand);}
+.kp-pack-best .kp-pack-qty{color:var(--kp-orange);}
+.kp-pack-price{font-size:25px;font-weight:900;color:var(--kp-text);white-space:nowrap;}
+.kp-pack-price s{font-size:15px;color:var(--kp-text-muted);font-weight:600;margin-right:6px;}
+.kp-pack-hook{display:inline-block;background:var(--kp-red-soft);color:var(--kp-red-dark);font-weight:800;font-size:13.5px;padding:6px 12px;border-radius:8px;margin-top:10px;}
+.kp-pack-sub{font-size:13.5px;color:var(--kp-text-soft);margin-top:8px;line-height:1.5;}
+.kp-pack-save{color:var(--kp-green);font-weight:800;}
+.kp-pack-pick{text-align:center;font-size:14px;font-weight:700;color:var(--kp-brand);background:var(--kp-brand-pale);border-radius:12px;padding:12px;margin:6px 0 0;}
+
+/* OFERTA */
+.kp-oferta{background:linear-gradient(135deg,var(--kp-brand) 0%,#051e7a 100%);color:#fff;padding:34px 24px;border-radius:22px;text-align:center;position:relative;overflow:hidden;margin-top:18px;}
+.kp-oferta::before{content:"";position:absolute;top:-50%;right:-30%;width:100%;height:200%;background:radial-gradient(circle,rgba(218,94,14,0.15) 0%,transparent 60%);}
+.kp-oferta>*{position:relative;}
+.kp-oferta .kp-badge{display:inline-block;background:var(--kp-red);color:#fff;padding:9px 18px;border-radius:999px;font-weight:800;font-size:13px;letter-spacing:0.5px;animation:kpbounce 1.6s infinite;box-shadow:0 4px 14px rgba(255,0,0,0.4);}
+.kp-oferta .kp-ancla{font-size:22px;color:rgba(255,255,255,0.55);text-decoration:line-through;margin-top:18px;font-weight:600;}
+.kp-oferta .kp-precio{font-size:58px;font-weight:900;color:var(--kp-orange-light);letter-spacing:-2px;line-height:1;margin:6px 0 4px;text-shadow:0 2px 12px rgba(255,156,0,0.3);}
+.kp-oferta .kp-ahorro{color:var(--kp-yellow);font-weight:800;font-size:16px;margin-bottom:18px;}
+.kp-oferta .kp-perks{display:grid;grid-template-columns:1fr 1fr;gap:10px 14px;text-align:left;font-size:13.5px;margin-top:18px;opacity:0.97;}
+.kp-oferta .kp-perks div{display:flex;gap:6px;align-items:center;}
+.kp-urgencia{background:var(--kp-red);color:#fff;padding:13px;text-align:center;font-weight:800;font-size:14px;border-radius:10px;margin-top:16px;animation:kpblink 1.4s infinite;box-shadow:0 2px 8px rgba(255,0,0,0.3);}
+.kp-stock{background:rgba(255,255,255,0.1);color:#fff;padding:13px;text-align:center;font-size:13.5px;border-radius:10px;margin-top:12px;border:1px dashed rgba(255,255,255,0.35);}
+.kp-stock b{color:var(--kp-yellow);}
+
+/* GUÍA */
+.kp-guide{background:var(--kp-bg);border:1.5px solid var(--kp-brand-soft);padding:24px;border-radius:18px;margin:24px 0;}
+.kp-guide h3{color:var(--kp-brand);}
+.kp-guide-intro{font-size:14.5px;color:var(--kp-text-soft);margin-bottom:16px;}
+.kp-guide ol{padding-left:22px;margin:0;}
+.kp-guide ol li{margin-bottom:12px;font-size:14.5px;line-height:1.55;color:var(--kp-text-soft);}
+.kp-guide ol li b{color:var(--kp-brand);font-weight:700;}
+.kp-guide ol li::marker{color:var(--kp-brand);font-weight:900;}
+
+/* FAQ */
+.kp-faq{border:1.5px solid var(--kp-border);border-radius:14px;overflow:hidden;margin:8px 0;background:var(--kp-bg);}
+.kp-faq summary{padding:18px 20px;cursor:pointer;font-weight:700;background:var(--kp-bg-soft);font-size:15px;list-style:none;position:relative;padding-right:44px;color:var(--kp-text);}
+.kp-faq summary::-webkit-details-marker{display:none;}
+.kp-faq summary::after{content:"+";position:absolute;right:20px;top:50%;transform:translateY(-50%);font-size:26px;color:var(--kp-brand);font-weight:400;width:28px;height:28px;background:#fff;border-radius:50%;display:flex;align-items:center;justify-content:center;line-height:1;}
+.kp-faq[open] summary{background:var(--kp-brand-pale);color:var(--kp-brand);}
+.kp-faq[open] summary::after{content:"\2212";background:var(--kp-brand);color:#fff;}
+.kp-faq-answer{padding:16px 20px 20px;font-size:14.5px;line-height:1.6;color:var(--kp-text-soft);}
+.kp-faq-answer .kp-tldr-mini{font-weight:800;color:var(--kp-brand);margin-bottom:8px;display:block;font-size:13.5px;background:var(--kp-brand-pale);padding:6px 10px;border-radius:8px;}
+
+/* CTA FINAL */
+.kp-cta-final{text-align:center;padding:30px 22px;background:linear-gradient(135deg,var(--kp-orange-pale) 0%,var(--kp-orange-soft) 100%);border-radius:18px;margin-top:22px;border:2px solid var(--kp-orange);}
+.kp-cta-final h3{font-size:22px;margin-bottom:8px;color:var(--kp-brand);}
+.kp-cta-final p{font-size:15px;color:var(--kp-text-soft);}
+.kp-cta-final .kp-up{font-size:36px;line-height:1;margin:8px 0 4px;color:var(--kp-red);animation:kpbounce 1.6s infinite;}
+.kp-cta-final .kp-final-line{font-weight:800;color:var(--kp-red-dark);font-size:16px;}
+.kp-cta-final .kp-final-price{font-size:22px;font-weight:900;color:var(--kp-brand);margin:8px 0;}
+.kp-cta-final .kp-final-price s{color:var(--kp-text-muted);font-weight:600;font-size:17px;margin-right:8px;}
+
+@keyframes kpbounce{0%,100%{transform:translateY(0);}50%{transform:translateY(-5px);}}
+@keyframes kpblink{0%,100%{opacity:1;}50%{opacity:0.7;}}
+
+@media (max-width:480px){
+  .kp h2{font-size:22px;}
+  .kp-bigidea h1{font-size:26px;}
+  .kp-bigidea{padding:28px 20px;}
+  .kp-oferta .kp-precio{font-size:46px;}
+  .kp-oferta .kp-perks{grid-template-columns:1fr;}
+  .kp-pasos{grid-template-columns:1fr;}
+  .kp-uspstrip{grid-template-columns:1fr 1fr;}
+  .kp-table{font-size:13px;}
+  .kp-table thead th,.kp-table td{padding:11px 9px;}
+  .kp-benef{padding:16px;}
+  .kp-benef-icon{width:44px;height:44px;font-size:26px;}
+}
+</style>
+<div class="kp">
+
+<!-- 1. HERO BIG IDEA -->
+<div class="kp-bigidea">
+<div class="kp-bigidea-tag">⚡ NUEVO EN BOLIVIA</div>
+<h1>La rasuradora íntima que <span class="kp-highlight">no te corta</span> — ni te deja granitos.</h1>
+<p class="kp-bigidea-sub">Afeitate ahí abajo en 2 minutos, sin sangre y sin esa irritación roja. Pensada SOLO para la zona íntima — no es la misma hojilla de la cara.</p>
+<div class="kp-bigidea-stars">⭐⭐⭐⭐⭐</div>
+<div class="kp-bigidea-rating">4.8/5 · +1.200 hombres en Bolivia ya la usan 🇧🇴</div>
+<div class="kp-bigidea-price"><s>Bs. 398</s> <b>Bs. 199</b> <span>50% OFF</span></div>
+</div>
+
+<!-- 2. USP STRIP -->
+<div class="kp-uspstrip">
+<div><span class="kp-emoji">🛡️</span><span>No te corta</span></div>
+<div><span class="kp-emoji">⚡</span><span>Listo en 2 min</span></div>
+<div><span class="kp-emoji">🔋</span><span>Pantalla LED</span></div>
+<div><span class="kp-emoji">📦</span><span>Llega discreto</span></div>
+</div>
+
+<!-- 3. TL;DR -->
+<div class="kp-tldr">
+<h3>📌 Lo que necesitás saber</h3>
+<ul>
+<li><b>Qué es:</b> rasuradora íntima y corporal eléctrica para hombre, modelo KNUP QR-052.</li>
+<li><b>Por qué es distinta:</b> cuchilla <b>cerámica</b> hipoalergénica de bajo calentamiento + cabezal protegido que se desliza sin cortar ni irritar la piel delicada.</li>
+<li><b>Qué incluye:</b> rasuradora + 2 peines guía + cabezal de repuesto + cable USB + cepillo de limpieza + aceite.</li>
+<li><b>Batería:</b> hasta 90 min de uso con ~1 hora de carga USB. Pantalla LED con % de batería.</li>
+<li><b>Resistente al agua:</b> usala en seco o en la ducha; el cabezal se enjuaga.</li>
+<li><b>Precio Bolivia:</b> Bs. 199 (regular Bs. 398) con envío gratis y pago contra entrega.</li>
+<li><b>Garantía:</b> 30 días — funciona o te devolvemos la plata.</li>
+</ul>
+</div>
+
+<!-- 4. PROBLEMA + AGITACIÓN -->
+<div class="kp-sec kp-prob">
+<h2>El error que comete 8 de cada 10 hombres</h2>
+<p>Usar la misma hojilla de la cara para la zona íntima. Y después no entender por qué les corta, les arde y les deja granitos rojos por días.</p>
+<p>La piel de ahí abajo es <b>mucho más fina y sensible</b> que la de la cara. Una hojilla pensada para la barba sobre piel delicada = corte y ardor asegurados.</p>
+<div class="kp-quote">No es falta de higiene. Es la herramienta equivocada.</div>
+<div class="kp-agit">
+<p>Te apurás antes de salir. Pasás la hojilla rápido. Sentís el tirón.</p>
+<p>Al rato, el ardor. Al día siguiente, los granitos rojos.</p>
+<p>Y justo esa noche… preferís que no te vean así.</p>
+<p class="kp-agit-last">Pero se puede evitar HOY 👇</p>
+</div>
+</div>
+
+<!-- 5. SOLUCIÓN -->
+<div class="kp-sec kp-sol">
+<h2>Diseñada SOLO para tu zona íntima</h2>
+<p>Cuchilla <b>cerámica hipoalergénica</b> que casi no se calienta, con un cabezal de protección redondeada que se desliza sin morder la piel. Pantalla LED con el % de batería. Carga USB — la misma del celu.</p>
+<p>Sin espuma. Sin ritual. Sin sangre. La prendés, elegís el peine y <b>en 2 minutos estás listo.</b></p>
+<div class="kp-bigidea-line">"La rasuradora que no te corta."</div>
+</div>
+
+<!-- 6. 3 PASOS -->
+<h2 style="text-align:center;margin:32px 0 12px;">Cómo se usa — 3 pasos</h2>
+<div class="kp-pasos">
+<div class="kp-paso"><div class="kp-paso-num">1</div><b>Cargá por USB</b><span>~1 hora = hasta 90 min de uso</span></div>
+<div class="kp-paso"><div class="kp-paso-num">2</div><b>Elegí tu peine</b><span>2 alturas según el largo que querés</span></div>
+<div class="kp-paso"><div class="kp-paso-num">3</div><b>Pasala y listo</b><span>2 minutos. Sin cortes. Sin irritación.</span></div>
+</div>
+
+<!-- 7. FUTURE PACING -->
+<div class="kp-future">
+<span class="kp-time">⏱️ 7:40 PM · VIERNES</span>
+<h2>Imaginate esto</h2>
+<p>Estás por salir. Te metés a la ducha. Sacás la rasuradora del cargador, elegís el peine. En 2 minutos, ya estás listo. Sin cortes, sin granitos, sin esperar a que la piel se recupere.</p>
+<p style="margin-bottom:0;font-weight:800;font-size:16px;">Esa noche tu pareja va a notar la diferencia. Y vos también.</p>
+</div>
+
+<!-- 8. MID-CTA -->
+<div class="kp-midcta">
+<p>👇 ¿Ya la querés probar?</p>
+<div class="kp-midcta-price"><s>Bs. 398</s> Bs. 199</div>
+<p style="margin:6px 0 0;color:var(--kp-brand);">Elegí tu <b>Pack</b> arriba · Envío gratis · Pagás al recibir</p>
+<div class="kp-arrow">⬆️</div>
+</div>
+
+<!-- 9. BENEFICIOS -->
+<h2 style="text-align:center;margin:32px 0 18px;">Por qué no vas a volver a la hojilla común</h2>
+<div class="kp-benef"><span class="kp-benef-icon">🛡️</span><div><b>No te corta ni te irrita</b><span>Cuchilla cerámica + cabezal de protección redondeada para piel delicada. Cero cortes, cero granitos rojos, cero sangre.</span></div></div>
+<div class="kp-benef"><span class="kp-benef-icon">🧊</span><div><b>Cerámica que casi no se calienta</b><span>A diferencia del acero barato, la cuchilla cerámica trabaja fresca: menos ardor, menos rojeces después de afeitarte.</span></div></div>
+<div class="kp-benef"><span class="kp-benef-icon">⚡</span><div><b>Listo en 2 minutos — en seco</b><span>Sin espuma ni cremas. La prendés, elegís el peine y la pasás. Sin baño preparativo, sin esperas.</span></div></div>
+<div class="kp-benef"><span class="kp-benef-icon">🔋</span><div><b>Pantalla LED con % de batería</b><span>Sabés exactamente cuándo cargar. Carga USB universal — usás el mismo cable del celu.</span></div></div>
+<div class="kp-benef"><span class="kp-benef-icon">💧</span><div><b>Resistente al agua</b><span>Usala en seco o en la ducha. El cabezal se enjuaga bajo el grifo para que quede siempre limpia.</span></div></div>
+<div class="kp-benef"><span class="kp-benef-icon">💑</span><div><b>La diferencia se nota</b><span>Más limpio, más fresco, más prolijo. Tu pareja lo nota desde la primera vez. Vos también.</span></div></div>
+
+<!-- 10. VENTAJAS (tabla VS) -->
+<h2 style="text-align:center;margin:32px 0 14px;">Esta rasuradora vs hojilla común</h2>
+<div class="kp-table-wrap">
+<table class="kp-table">
+<thead><tr><th>❌ Hojilla / rasuradora común</th><th>✓ Esta rasuradora</th></tr></thead>
+<tbody>
+<tr><td>Hojilla recta de cara que corta piel delicada</td><td>Cuchilla cerámica + cabezal protegido para zona íntima</td></tr>
+<tr><td>Acero que se calienta y se oxida</td><td>Cerámica hipoalergénica de bajo calentamiento</td></tr>
+<tr><td>Necesita espuma, agua y tiempo</td><td>Funciona en seco — 2 minutos</td></tr>
+<tr><td>Sin indicador de batería</td><td>Pantalla LED con % exacto</td></tr>
+<tr><td>Motor ruidoso — se escucha en toda la casa</td><td>Motor silencioso — discreción total</td></tr>
+<tr><td>Sin repuestos incluidos</td><td>Cabezal extra + 2 peines + cepillo + aceite</td></tr>
+<tr><td>Sin garantía</td><td>30 días o te devolvemos la plata</td></tr>
+</tbody>
+</table>
+</div>
+
+<!-- 11. OBJECIONES -->
+<div class="kp-obj">
+<h3>Antes de pedirla, te saco las 4 dudas más comunes</h3>
+<div class="kp-obj-q">"¿Y si me llega y no funciona?"</div>
+<div class="kp-obj-a">Tenés 30 días. Si no funciona, llega dañada o no te convence, te devolvemos el 100% sin trámites.</div>
+<div class="kp-obj-q">"¿La caja dice qué es?"</div>
+<div class="kp-obj-a">No. Llega en caja neutra, sin marcas. Ni el delivery ni nadie en tu casa sabe qué hay adentro.</div>
+<div class="kp-obj-q">"¿De verdad no corta?"</div>
+<div class="kp-obj-a">La cuchilla es cerámica y el cabezal tiene protección redondeada pensada para zona íntima. No es la hojilla recta de la cara — por eso no te muerde la piel.</div>
+<div class="kp-obj-q">"¿Y si vivo en una ciudad chica?"</div>
+<div class="kp-obj-a">Enviamos a TODA Bolivia. Santa Cruz, La Paz, El Alto y Cochabamba con pago contra entrega. Resto del país por encomienda con QR.</div>
+</div>
+
+<!-- 12. SOCIAL PROOF -->
+<div class="kp-sec kp-social">
+<h3>🇧🇴 +1.200 hombres bolivianos ya la están usando</h3>
+<p style="font-size:14.5px;color:var(--kp-text-soft);margin-bottom:8px;">Charliac es una empresa boliviana que importa productos seleccionados con garantía real. Equipo en Santa Cruz, La Paz y Cochabamba. Soporte por WhatsApp todos los días.</p>
+<div class="kp-social-stats">
+<div class="kp-social-stat"><b>+1.200</b><span>Pedidos entregados</span></div>
+<div class="kp-social-stat"><b>4.8/5</b><span>Calificación clientes</span></div>
+<div class="kp-social-stat"><b>30 días</b><span>Garantía real</span></div>
+</div>
+<div class="kp-social-extra"><span>✓ Verificado en SCZ</span><span>✓ Verificado en LPZ</span><span>✓ Verificado en CBB</span><span>✓ Soporte WhatsApp</span></div>
+</div>
+
+<!-- 13. ESPECIFICACIONES -->
+<h2 style="text-align:center;margin:32px 0 14px;">Especificaciones técnicas</h2>
+<div class="kp-specs">
+<div><span>Modelo</span><b>KNUP QR-052</b></div>
+<div><span>Tipo</span><b>Rasuradora íntima y corporal</b></div>
+<div><span>Cuchilla</span><b>Cerámica hipoalergénica de bajo calentamiento</b></div>
+<div><span>Sistema</span><b>Cabezal con protección redondeada</b></div>
+<div><span>Carga</span><b>USB — ~1 hora full</b></div>
+<div><span>Autonomía</span><b>Hasta 90 minutos de uso</b></div>
+<div><span>Pantalla</span><b>LED con % de batería</b></div>
+<div><span>Resistencia</span><b>Al agua — uso en seco o ducha</b></div>
+<div><span>Peines guía</span><b>2 alturas ajustables</b></div>
+<div><span>Incluye</span><b>Cabezal repuesto + cepillo + aceite</b></div>
+<div><span>Garantía</span><b>30 días Charliac Bolivia</b></div>
+</div>
+
+<!-- 14. GARANTÍA -->
+<div class="kp-garantia">
+<div class="kp-sello"><span class="kp-sello-num">30</span><span class="kp-sello-label">Días</span></div>
+<div class="kp-check-tag">✓ GARANTÍA CHARLIAC</div>
+<h3>Probala sin riesgo.</h3>
+<p>Si llega dañada, no funciona o simplemente no te convence — <b>te devolvemos el 100% de tu plata</b>. Funciona, o quedás con tu dinero.</p>
+<div class="kp-bold-promise">Sin trámites · Sin preguntas · Sin trabas</div>
+</div>
+
+<!-- 15. OFERTA + ESCALERA DE PACKS -->
+<h2 style="text-align:center;margin:32px 0 6px;">Elegí tu pack 👇</h2>
+<p style="text-align:center;color:var(--kp-text-soft);font-size:14.5px;margin-bottom:16px;">Cuantas más llevás, más ahorrás. El envío es gratis igual — así que el segundo y el tercero te salen casi regalados.</p>
+<div class="kp-packs">
+<div class="kp-pack">
+<div class="kp-pack-top"><span class="kp-pack-qty">1 unidad</span><span class="kp-pack-price"><s>Bs. 398</s>Bs. 199</span></div>
+<div class="kp-pack-sub">Para vos. Pruébala con garantía de 30 días.</div>
+</div>
+<div class="kp-pack kp-pack-best">
+<div class="kp-pack-ribbon">⭐ EL MÁS PEDIDO</div>
+<div class="kp-pack-top"><span class="kp-pack-qty">2 unidades</span><span class="kp-pack-price"><s>Bs. 398</s>Bs. 299</span></div>
+<div class="kp-pack-hook">🔥 El 2do a MITAD de precio</div>
+<div class="kp-pack-sub"><span class="kp-pack-save">Ahorrás Bs. 99.</span> Una para vos y otra de regalo (o para tu pareja — también sirve para ella).</div>
+</div>
+<div class="kp-pack kp-pack-max">
+<div class="kp-pack-ribbon">💰 MÁXIMO AHORRO</div>
+<div class="kp-pack-top"><span class="kp-pack-qty">3 unidades</span><span class="kp-pack-price"><s>Bs. 597</s>Bs. 398</span></div>
+<div class="kp-pack-hook">🎁 Pagás 2, el 3ro es GRATIS</div>
+<div class="kp-pack-sub"><span class="kp-pack-save">Ahorrás Bs. 199 — una unidad entera gratis.</span> Ideal para regalar a tu hermano o amigo.</div>
+</div>
+</div>
+<div class="kp-pack-pick">👆 Seleccioná tu pack arriba en <b>"Pack"</b> y tocá <b>Comprar</b>.</div>
+
+<div class="kp-oferta">
+<span class="kp-badge">🔥 OFERTA DE LANZAMIENTO</span>
+<div class="kp-ancla">Bs. 398</div>
+<div class="kp-precio">Bs. 199</div>
+<div class="kp-ahorro">Ahorrás Bs. 199 hoy (la unidad)</div>
+<div class="kp-perks">
+<div>🚚 Envío GRATIS a toda Bolivia</div>
+<div>💵 Pagás al recibir</div>
+<div>📦 Caja 100% discreta</div>
+<div>🛡️ Garantía 30 días</div>
+</div>
+<div class="kp-stock">📦 Quedan pocas unidades de este lote al precio de lanzamiento</div>
+<div class="kp-urgencia">⚠️ Cuando se agota el lote, vuelve al precio normal de Bs. 398</div>
+</div>
+
+<!-- 16. GUÍA EDUCATIVA -->
+<div class="kp-guide">
+<h3>📚 Cómo afeitarte la zona íntima sin cortes — guía rápida</h3>
+<p class="kp-guide-intro">Si es tu primera vez con una rasuradora íntima, seguí estos pasos para un resultado prolijo desde el día 1:</p>
+<ol>
+<li><b>Empezá con vello corto.</b> Si tenés mucho, recortalo primero con el peine guía más alto.</li>
+<li><b>Usala en seco o en la ducha.</b> No necesitás espuma ni gel.</li>
+<li><b>Estirá la piel con la mano libre.</b> Así queda una superficie pareja y evitás pliegues.</li>
+<li><b>Pasala despacio, en el sentido del vello.</b> Movimientos cortos, sin presionar fuerte.</li>
+<li><b>Limpiá el cabezal con el cepillo y una gota de aceite después de usarla.</b> Mantiene la cuchilla afilada por años.</li>
+</ol>
+</div>
+
+<!-- 17. FAQ -->
+<h2 style="text-align:center;margin:32px 0 16px;">Preguntas frecuentes</h2>
+<details open="" class="kp-faq">
+<summary>¿Cómo funciona el pago contra entrega en Bolivia?</summary>
+<div class="kp-faq-answer"><span class="kp-tldr-mini">✓ Pagás al recibir · Sin tarjeta · Sin adelanto</span> En Santa Cruz, La Paz, El Alto y Cochabamba pagás en efectivo cuando recibís el producto en tu puerta. Resto del país: 2-5 días con anticipo por QR. <b>Envío gratis a toda Bolivia.</b></div>
+</details>
+<details class="kp-faq">
+<summary>¿De verdad no corta la piel?</summary>
+<div class="kp-faq-answer"><span class="kp-tldr-mini">✓ Cuchilla cerámica + cabezal protegido</span> La cuchilla es cerámica de bajo calentamiento y el cabezal tiene protección redondeada pensada para zona íntima. No es la hojilla recta de la cara — por eso está hecha para piel delicada, donde una rasuradora común sería peligrosa.</div>
+</details>
+<details class="kp-faq">
+<summary>¿La caja es discreta cuando llega?</summary>
+<div class="kp-faq-answer"><span class="kp-tldr-mini">✓ 100% discreta · Caja neutra sin marcas</span> El producto llega en caja neutra, sin indicar el contenido. El delivery no sabe qué hay adentro. <b>Tu privacidad es prioridad.</b></div>
+</details>
+<details class="kp-faq">
+<summary>¿Sirve también para mi pareja?</summary>
+<div class="kp-faq-answer"><span class="kp-tldr-mini">✓ Sí, es unisex</span> Esta rasuradora sirve para zonas íntimas masculinas y femeninas. Muchas parejas la comparten — incluye cabezal de repuesto y peines ajustables. Por eso el pack de 2 es el más pedido.</div>
+</details>
+<details class="kp-faq">
+<summary>¿Cuánto dura la batería?</summary>
+<div class="kp-faq-answer"><span class="kp-tldr-mini">✓ Hasta 90 minutos · Carga USB</span> Carga USB universal (el mismo cable del celu). Una hora de carga te da hasta 90 minutos de uso, y la pantalla LED te muestra el % exacto en todo momento.</div>
+</details>
+<details class="kp-faq">
+<summary>¿Qué pasa si no me convence?</summary>
+<div class="kp-faq-answer"><span class="kp-tldr-mini">✓ Garantía 30 días · Devolución 100%</span> Si no te convence, llega dañada o tiene defecto, te devolvemos el 100% de tu plata. Sin trámites, sin preguntas. Escribís al WhatsApp 74171116 y se resuelve.</div>
+</details>
+
+<!-- 18. CTA FINAL -->
+<div class="kp-cta-final">
+<h3>Ya sabés todo lo que necesitás.</h3>
+<p>Pedila hoy al precio de lanzamiento, probala 30 días, y decidís vos.</p>
+<div class="kp-final-price"><s>Bs. 398</s> Bs. 199</div>
+<div class="kp-up">⬆️</div>
+<div class="kp-final-line">Elegí tu pack y tocá "Comprar" — lo recibís en tu casa.</div>
+</div>
+
+</div>
+<!-- FIN KLIPO V5 -->
