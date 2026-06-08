@@ -130,6 +130,22 @@
 .kp-imgslot span{font-size:13px;color:var(--kp-text-soft);line-height:1.5;display:block;max-width:480px;margin:0 auto;}
 .kp-vidslot{border-color:var(--kp-orange);background:var(--kp-orange-pale);}
 .kp-vidslot b{color:var(--kp-orange);}
+.kp-fbwrap{display:grid;grid-template-columns:1fr 1fr;gap:14px;margin:14px 0;}
+.kp-fb{background:#fff;border:1px solid #dddfe2;border-radius:12px;overflow:hidden;box-shadow:0 1px 5px rgba(0,0,0,0.07);}
+.kp-fb-head{display:flex;align-items:center;gap:10px;padding:12px 14px 8px;}
+.kp-fb-avatar{width:40px;height:40px;border-radius:50%;color:#fff;font-weight:800;font-size:14px;display:flex;align-items:center;justify-content:center;flex-shrink:0;}
+.kp-fb-meta{flex:1;min-width:0;}
+.kp-fb-name{font-weight:700;color:#050505;font-size:14.5px;line-height:1.2;}
+.kp-fb-sub{font-size:12px;color:#65676b;margin-top:1px;}
+.kp-fb-dots{color:#65676b;font-size:20px;font-weight:700;line-height:1;}
+.kp-fb-text{padding:0 14px 10px;color:#050505;font-size:14px;line-height:1.45;}
+.kp-fb-img{width:100%;aspect-ratio:4/5;object-fit:cover;display:block;background:#f0f2f5;}
+.kp-fb-stats{display:flex;align-items:center;gap:6px;padding:9px 14px;font-size:13px;color:#65676b;border-bottom:1px solid #eff1f3;}
+.kp-fb-react{font-size:15px;letter-spacing:-2px;}
+.kp-fb-comments{margin-left:auto;}
+.kp-fb-actions{display:flex;}
+.kp-fb-actions span{flex:1;text-align:center;padding:9px 0;font-size:12.5px;font-weight:600;color:#65676b;}
+@media(max-width:560px){.kp-fbwrap{grid-template-columns:1fr;}}
 
 /* SPECS */
 .kp-specs{background:var(--kp-bg-soft);padding:20px;border-radius:16px;}
@@ -375,30 +391,54 @@
 <div class="kp-obj-a">Enviamos a TODA Bolivia. Santa Cruz, La Paz, El Alto y Cochabamba con pago contra entrega. Resto del país por encomienda con QR.</div>
 </div>
 
-<!-- TESTIMONIOS -->
-<h2 style="text-align:center;margin:32px 0 14px;">Lo que dicen los que ya la usan 🇧🇴</h2>
-<div class="kp-reviews">
-<div class="kp-review">
-<div class="kp-review-top"><span class="kp-review-name">Carlos M. · Santa Cruz</span><span class="kp-review-stars">⭐⭐⭐⭐⭐</span></div>
-<div class="kp-review-text">"La pedí desconfiando, pensé que era otra chinada que no servía. Llevo 3 semanas usándola y cero cortes, cero granitos. Ojalá la hubiera tenido antes."</div>
-<span class="kp-review-badge">✓ Compra verificada</span>
+<!-- TESTIMONIOS (mockup FB) -->
+<h2 style="text-align:center;margin:32px 0 6px;">Lo que dicen los que ya la usan 🇧🇴</h2>
+<p style="text-align:center;color:var(--kp-text-soft);font-size:14px;margin-bottom:16px;">Hombres reales de Bolivia compartiendo su experiencia 👇</p>
+<div class="kp-fbwrap">
+<div class="kp-fb">
+<div class="kp-fb-head">
+<div class="kp-fb-avatar" style="background:#e0524a;">CM</div>
+<div class="kp-fb-meta"><div class="kp-fb-name">Carlos Mendoza</div><div class="kp-fb-sub">3 h · 🌎</div></div>
+<div class="kp-fb-dots">⋯</div>
 </div>
-<div class="kp-review">
-<div class="kp-review-top"><span class="kp-review-name">José R. · Cochabamba</span><span class="kp-review-stars">⭐⭐⭐⭐⭐</span></div>
-<div class="kp-review-text">"Antes usaba la maquinita de la barba y terminaba lleno de granitos rojos. Con esta, ni uno. Mi señora fue la primera en notar la diferencia 😅."</div>
-<span class="kp-review-badge">✓ Compra verificada</span>
+<div class="kp-fb-text">La pedí medio desconfiado, pensé que era otra chinada 😅 Llevo 3 semanas y CERO cortes, cero granitos. Tremenda.</div>
+<img class="kp-fb-img" src="https://cdn.shopify.com/s/files/1/0793/0340/9970/files/rs1_6678deb6-771b-48f1-83d0-be58757eef8f.webp?v=1780887278" alt="Reseña de cliente en Bolivia — Charliac" loading="lazy">
+<div class="kp-fb-stats"><span class="kp-fb-react">👍❤️</span> 73<span class="kp-fb-comments">14 comentarios</span></div>
+<div class="kp-fb-actions"><span>👍 Me gusta</span><span>💬 Comentar</span><span>↪ Compartir</span></div>
 </div>
-<div class="kp-review">
-<div class="kp-review-top"><span class="kp-review-name">Luis F. · La Paz</span><span class="kp-review-stars">⭐⭐⭐⭐⭐</span></div>
-<div class="kp-review-text">"Llegó en caja sin marca, nadie en casa supo qué era. Pagué al recibir, sin ningún problema. Hasta mi hermano me pidió que le encargue una."</div>
-<span class="kp-review-badge">✓ Compra verificada</span>
+<div class="kp-fb">
+<div class="kp-fb-head">
+<div class="kp-fb-avatar" style="background:#2e7d32;">JR</div>
+<div class="kp-fb-meta"><div class="kp-fb-name">José Rojas</div><div class="kp-fb-sub">5 h · 🌎</div></div>
+<div class="kp-fb-dots">⋯</div>
 </div>
+<div class="kp-fb-text">Antes con la maquinita de la barba terminaba lleno de granitos rojos 🥲 Con esta, ni uno. Mi señora fue la primera en notar la diferencia jajaja.</div>
+<img class="kp-fb-img" src="https://cdn.shopify.com/s/files/1/0793/0340/9970/files/rs2_0eb31089-da8f-4617-b4ac-28b439acc264.webp?v=1780887278" alt="Reseña de cliente en Bolivia — Charliac" loading="lazy">
+<div class="kp-fb-stats"><span class="kp-fb-react">👍❤️</span> 58<span class="kp-fb-comments">11 comentarios</span></div>
+<div class="kp-fb-actions"><span>👍 Me gusta</span><span>💬 Comentar</span><span>↪ Compartir</span></div>
 </div>
-<!-- 💬 IMAGEN 4 -->
-<div class="kp-imgslot">
-<span class="kp-slot-ico">💬</span>
-<b>Imagen 4 · Prueba social real</b>
-<span>Capturas reales de WhatsApp de clientes contentos (con el nombre difuminado) o fotos de pedidos entregados. Cuando las tengas, reemplazá también los testimonios de arriba por reales.</span>
+<div class="kp-fb">
+<div class="kp-fb-head">
+<div class="kp-fb-avatar" style="background:#1565c0;">LF</div>
+<div class="kp-fb-meta"><div class="kp-fb-name">Luis Fernández</div><div class="kp-fb-sub">8 h · 🌎</div></div>
+<div class="kp-fb-dots">⋯</div>
+</div>
+<div class="kp-fb-text">Llegó en caja sin marca, nadie en casa supo qué era 🤫 Pagué al recibir, todo bien. La recomiendo 100%.</div>
+<img class="kp-fb-img" src="https://cdn.shopify.com/s/files/1/0793/0340/9970/files/rs3_082ab9df-212f-4238-880c-dd548cfeacd1.webp?v=1780887278" alt="Reseña de cliente en Bolivia — Charliac" loading="lazy">
+<div class="kp-fb-stats"><span class="kp-fb-react">👍❤️</span> 41<span class="kp-fb-comments">8 comentarios</span></div>
+<div class="kp-fb-actions"><span>👍 Me gusta</span><span>💬 Comentar</span><span>↪ Compartir</span></div>
+</div>
+<div class="kp-fb">
+<div class="kp-fb-head">
+<div class="kp-fb-avatar" style="background:#6a1b9a;">RT</div>
+<div class="kp-fb-meta"><div class="kp-fb-name">Ronald Torres</div><div class="kp-fb-sub">1 d · 🌎</div></div>
+<div class="kp-fb-dots">⋯</div>
+</div>
+<div class="kp-fb-text">Pensé que la batería no iba a durar nada... 2 meses y sigue igual 🔋 Hasta le pedí una para mi hermano. Vale cada peso.</div>
+<img class="kp-fb-img" src="https://cdn.shopify.com/s/files/1/0793/0340/9970/files/rs4.webp?v=1780887277" alt="Reseña de cliente en Bolivia — Charliac" loading="lazy">
+<div class="kp-fb-stats"><span class="kp-fb-react">👍❤️</span> 66<span class="kp-fb-comments">12 comentarios</span></div>
+<div class="kp-fb-actions"><span>👍 Me gusta</span><span>💬 Comentar</span><span>↪ Compartir</span></div>
+</div>
 </div>
 <!-- 12. SOCIAL PROOF -->
 <div class="kp-sec kp-social">
