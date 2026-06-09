@@ -91,3 +91,30 @@ Criterio: (1) llena hueco actual, (2) antigüedad probada, (3) relevancia mascul
 | 15 | Camila Rodriguez | UGC "dejá la cera/maquinitas" (posible video) | https://www.facebook.com/ads/library/?id=4410975452513885 |
 
 Arranque recomendado: #1, #2, #3.
+
+---
+
+## 🥇 TOP 15 v2 — PRODUCT-HERO (se ve la rasuradora, para editar en Higgsfield) — 2026-06-09
+2da barrida con keywords nuevas (recortadora íntima, trimmer corporal, partes íntimas) + catálogo completo de páginas product-shot. Foco: creativos donde SE VE el aparato, para swap del KNUP. Ranked por relevancia masculino/íntima × longevidad probada × clonabilidad estática.
+
+**Hallazgo clave:** SafeRazor Argentina tiene anuncio activo desde ~oct 2025 (~7,5 MESES) = ganador más longevo del nicho. Voltra = 188 ads activos (marca multi-producto). Razerly = 214 ads activos. Bacan Razor Body = gemelo directo íntima/corporal.
+
+| # | Anunciante | Qué replicar | Link |
+|---|---|---|---|
+| 1 | SafeRazor AR | Aparato + "afeitate sin cortes ni sangrado" — ~7,5 meses | https://www.facebook.com/ads/library/?id=1729590661790006 |
+| 2 | SafeRazor AR | "Por algo somos la más viral de Argentina" | https://www.facebook.com/ads/library/?id=2140900316450580 |
+| 3 | Bacan · Razor Body | Afeitadora corporal en uso "en minutos" | https://www.facebook.com/ads/library/?id=28283882864535696 |
+| 4 | Bacan | "Tan GRANDE como tu Viejo" (Día del Padre) | https://www.facebook.com/ads/library/?id=2079875659259659 |
+| 5 | Bacan | Kit completo "Zonas Íntimas, Barba y Pelo" | https://www.facebook.com/ads/library/?id=2064988751114803 |
+| 6 | Razerly | Aparato + burst "-50%" — 214 ads activos | https://www.facebook.com/ads/library/?id=1797688131596320 |
+| 7 | Voltra | Aparato + "precio explosivo" | https://www.facebook.com/ads/library/?id=1279573470915181 |
+| 8 | VGR Argentina | Product shot "V-601 Íntima Corporal" | https://www.facebook.com/ads/library/?id=1934903383664613 |
+| 9 | HAVS | Aparato + "6 cuotas envío gratis" | https://www.facebook.com/ads/library/?id=1403581931536855 |
+| 10 | ShigiroExpress | "SilkTouch Dual 2-en-1" device hero | https://www.facebook.com/ads/library/?id=1461751878330035 |
+| 11 | Nuréa | "Depiladora 2 en 1" device | https://www.facebook.com/ads/library/?id=2584638525324062 |
+| 12 | Multiproductos s.a | Aparato + "SUPER OFERTA" (COD CO) | https://www.facebook.com/ads/library/?id=873604531815245 |
+| 13 | Tobetter Beauty | Catalog "Compra 100% Segura" (COD CO) | https://www.facebook.com/ads/library/?id=2151912018874348 |
+| 14 | TECNONNEK | "Depiladora 2 en 1 -50%" (COD CO) | https://www.facebook.com/ads/library/?id=2059793804966230 |
+| 15 | Ser & Parecer | Aparato + "+5.000 hombres ya cambiaron" | https://www.facebook.com/ads/library/?id=26599113339715976 |
+
+Arranque recomendado: #1 (SafeRazor) y #3 (Bacan Razor Body).
