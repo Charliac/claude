@@ -159,3 +159,22 @@ La Afeitadora Corporal Anti-Cortes® es la que todos están pidiendo:
 - Copy 3 ↔ Macro "por qué no te corta"
 - Copy 4 ↔ #5 VS rastrillo
 - Copy 5 ↔ #3 Chau cortes (producto-héroe) ó WhatsApp chat
+
+---
+
+## ⭐ SET FINAL DE LANZAMIENTO (publicar hoy) — 2026-06-09
+Mejor mezcla con todo lo aprendido: advertorial (Ephra 8 sem) + tabú directo (SafeRazor 7 meses) + cost-of-inaction + testimonio reframe + FOMO. 5 ángulos distintos para que Meta optimice.
+
+- COPY 1: Historia / Advertorial ("cambié una sola cosa") — CTA "Probala vos"
+- COPY 2: Fracaso previo testimonial (Carlos M., SCZ) — CTA "Pedila acá"
+- COPY 3: Tabú directo "afeitate ahí abajo sin cortes ni sangrado" — CTA "Conseguí la tuya hoy"
+- COPY 4: Cost of inaction / cementerio del cajón — CTA "Cortá el gasto hoy"
+- COPY 5: FOMO + testimonio cierre (Ronald T., SCZ) — CTA "Pedila antes de que vuelva a Bs. 398"
+
+Bloque oferta (idéntico en los 5): 50% OFF (398→199) + envío gratis + COD + garantía 30 días.
+
+TÍTULOS: Afeitate ahí abajo sin cortes ni sangrado / Cambié una sola cosa y se acabaron los granitos / Dejá de gastar en maquinitas que te irritan / Listo en 2 minutos, en seco y sin sangre / Envío gratis + pagás al recibir.
+
+DESCRIPCIONES: Cuchilla cerámica para la piel más delicada / Sin cortes ni granitos al otro día / Resiste salpicaduras · recargable USB · LED / Cada vez más hombres en Bolivia hacen el cambio / Envío gratis + pagás al recibir.
+
+Orden de testeo: 1 → 3 → 2 → 4 → 5. Bs50-100/día. Matar CPL>Bs15; escalar el que baje de Bs10. Mantener censura ("ahí abajo/huev*s") para políticas Meta.
