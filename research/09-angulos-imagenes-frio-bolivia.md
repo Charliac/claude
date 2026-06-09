@@ -81,3 +81,14 @@ _Base: auditoría de ganadores Meta (Ephra 8 sem, SafeRazor ~7 meses, MyHuevos, 
 3. #3 Chau cortes (problema-consciente)
 4. #4 Calor Bolivia (hiperlocal)
 5. #5 VS rastrillo (comparación + ahorro)
+
+---
+
+## BATCH 2 — 5 FORMATOS NUEVOS (nativo/UGC + reason-why + value) — 2026-06-09
+Categoría distinta a la primera tanda: en frío, los formatos que NO parecen anuncio saltan la ceguera publicitaria y suelen ganar CTR. Mismas restricciones honestas (resiste salpicaduras, 90 min, sin dock, Knup, sin stats falsas).
+
+1. **Captura de chat de WhatsApp** (nativo UGC · word-of-mouth). Bro chat recomendando. 9:16.
+2. **Nota de iPhone / confesión** (advertorial nativo · dwell time). "Lo que nadie te dice...". 4:5.
+3. **Barra de búsqueda Google + autocomplete** (search-intent · message-match). "cómo afeitarme ahí abajo sin cortarme". 1:1.
+4. **Macro mecanismo "por qué NO te corta"** (reason-why · curiosity gap · credibilidad). Zoom a cuchilla cerámica + cabezal protector. 1:1.
+5. **Flatlay "todo lo que viene en la caja"** (value-stacking · destruye objeción de precio). "Todo esto por Bs199 (antes Bs398)". 4:5.
