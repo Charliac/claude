@@ -66,3 +66,28 @@ Inferido del copy + convención de estos creativos (no pude ver cada pixel):
 
 ## Validación de mercado
 Hay **91 anuncios activos** de "afeitadora corporal", **69** de "rasuradora corporal" y **42** de "afeitadora íntima hombre" en mercados hispanos. Categoría con demanda probada y competencia que lleva **meses** invirtiendo → nicho validado, no saturado en Bolivia.
+
+---
+
+## 🥇 TOP 15 para replicar con Higgsfield (ranked mejor → peor) — 2026-06-09
+Criterio: (1) llena hueco actual, (2) antigüedad probada, (3) relevancia masculino/íntima, (4) composición estática clonable. Caveat: la API no expone imagen vs video; verificar al abrir.
+
+| # | Anunciante | Qué replicar | Link |
+|---|---|---|---|
+| 1 | Ephra (ES) | Antes/Después de piel (granitos vs limpia) — 8 sem | https://www.facebook.com/ads/library/?id=975738745228189 |
+| 2 | Ephra (ES) | Foto de dolor 1ra persona — 8 sem | https://www.facebook.com/ads/library/?id=1566663565049247 |
+| 3 | Voltra (AR) | Producto sobre fondo color + burst precio | https://www.facebook.com/ads/library/?id=1279573470915181 |
+| 4 | Bacan by Mantra (AR) | Afeitadora corporal en uso "en minutos" | https://www.facebook.com/ads/library/?id=28283882864535696 |
+| 5 | Ser & Parecer (CO) | Prueba social "+5.000 hombres" | https://www.facebook.com/ads/library/?id=1393229852644337 |
+| 6 | Ephra (ES) | Flatlay "cementerio" soluciones fallidas — 8 sem | https://www.facebook.com/ads/library/?id=2681634132218199 |
+| 7 | MyHuevos.com.co | Humor "huevos suaves sin irritación" — 6 sem | https://www.facebook.com/ads/library/?id=3520459088130354 |
+| 8 | My cocos | "Rasurado Seguro Sin Cortes" | https://www.facebook.com/ads/library/?id=26699817859701493 |
+| 9 | Razerly (EU) | Producto + burst "-50%" — 6-7 sem | https://www.facebook.com/ads/library/?id=1492005709053572 |
+| 10 | Alyviera (ES) | Lifestyle "piel suave y sana" — 5 sem | https://www.facebook.com/ads/library/?id=993305880069695 |
+| 11 | Velory | Urgencia "-50% SOLO HOY" | https://www.facebook.com/ads/library/?id=1328787325264410 |
+| 12 | Elira Beauty | "ÚLTIMAS UNIDADES" + producto | https://www.facebook.com/ads/library/?id=4315636338765469 |
+| 13 | Pacasa.peru | Rating overlay "Producto verificado ⭐⭐⭐⭐⭐" | https://www.facebook.com/ads/library/?id=838238888908652 |
+| 14 | Yichang Perú | Producto + "HAZ CLIK AQUÍ" (COD) | https://www.facebook.com/ads/library/?id=1672029137466270 |
+| 15 | Camila Rodriguez | UGC "dejá la cera/maquinitas" (posible video) | https://www.facebook.com/ads/library/?id=4410975452513885 |
+
+Arranque recomendado: #1, #2, #3.
