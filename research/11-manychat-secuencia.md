@@ -61,3 +61,15 @@ Técnica: micro-compromiso. Acá arranca la calificación → pasa al agente par
 - Recuperación 24h: "¿Te la aparto antes de que se acabe el lote?" + imagen oferta.
 - Recuperación 72h: "Último aviso — vuelve a Bs. 398" (aversión a la pérdida).
 - Guión de agente (apertura → ciudad → datos → objeciones con micro-CTA "¿te la separo?" → confirmación).
+
+---
+
+## v2 — Con técnicas verificadas (escalera de micro-síes + botones) — 2026-06-09
+Cambios: apertura con micro-sí (botón), reciprocidad (tip gratis), bucles abiertos (Zeigarnik) al cierre de cada msg, botones de cantidad y ciudad (micro-compromisos).
+
+MSG 1 (botones: Sí me pasa / A veces): pregunta de calificación → reframe ("no es tu piel, es la herramienta") + tip gratis (afeitate en seco, piel estirada) + open loop "ahora te muestro por qué no te corta".
+MSG 2: reason-why (cuchilla cerámica fría, cabezal protegido) + contraste vs hojilla + discreción (caja neutra) + garantía 30 días.
+MSG 3 (botones: Quiero 1 / Quiero 2 ⭐ / Quiero 3): 1=199, 2=329 (Bs164 c/u, ahorrás Bs69, MÁS ELEGIDO), 3=449 (Bs150 c/u). COD + garantía + escasez por lotes (vuelve a 398).
+MSG 4 (botones: Santa Cruz / La Paz / El Alto / Cochabamba / Otra): pregunta de ciudad (foot-in-the-door, califica COD vs QR).
+
+Mapa de técnicas: Compromiso/Consistencia (botones), Reciprocidad (tip), Autoridad/Reason-why (cerámica), Señuelo+Prueba social (MÁS ELEGIDO), Escasez+Aversión a la pérdida (por lotes), Anclaje+Efecto marco (398→199, ahorrás Bs), Zeigarnik (bucles abiertos), Foot-in-the-door (ciudad).
