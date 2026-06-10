@@ -73,3 +73,12 @@ MSG 3 (botones: Quiero 1 / Quiero 2 ⭐ / Quiero 3): 1=199, 2=329 (Bs164 c/u, ah
 MSG 4 (botones: Santa Cruz / La Paz / El Alto / Cochabamba / Otra): pregunta de ciudad (foot-in-the-door, califica COD vs QR).
 
 Mapa de técnicas: Compromiso/Consistencia (botones), Reciprocidad (tip), Autoridad/Reason-why (cerámica), Señuelo+Prueba social (MÁS ELEGIDO), Escasez+Aversión a la pérdida (por lotes), Anclaje+Efecto marco (398→199, ahorrás Bs), Zeigarnik (bucles abiertos), Foot-in-the-door (ciudad).
+
+---
+
+## v3 — Formato detallado (estilo ejemplo del usuario / Closet) — 2026-06-09
+5 mensajes ricos siguiendo el formato del ejemplo: bienvenida+beneficios+confianza / cómo se usa+VS+incluye / specs+testimonios+reason-why / oferta+escasez+riesgo+incluye / cantidad+ciudad+pago por ciudad.
+- Precio: 398→199. Bundles: 2=329 (Bs164 c/u, ahorrás Bs69, MÁS ELEGIDO), 3=449 (Bs150 c/u).
+- Pago por ciudad SÍ incluido (a pedido del usuario, su flujo): SCZ/LPZ/EA/CBB pagás al recibir; resto QR antes del despacho.
+- Honestidad: resiste salpicaduras (no waterproof), hasta 90 min, "muchos llevan 2" suavizado a encuadre de valor.
+Es el formato preferido del usuario para ManyChat.
