@@ -1,0 +1,103 @@
+{%- comment -%}
+  Imagen simple — banner liviano a ratio natural.
+  Reemplazo optimizado de image-with-text para páginas de solo imágenes:
+  ~2 KB por sección (vs ~50 KB), srcset responsive, width/height anti-CLS
+  y opción de carga prioritaria para la primera imagen (LCP).
+{%- endcomment -%}
+
+{%- assign img = section.settings.image -%}
+
+<div class="simple-image-{{ section.id }}">
+  {%- if img != blank -%}
+    <img
+      src="{{ img | image_url: width: 1600 }}"
+      srcset="{{ img | image_url: width: 400 }} 400w, {{ img | image_url: width: 600 }} 600w, {{ img | image_url: width: 750 }} 750w, {{ img | image_url: width: 1000 }} 1000w, {{ img | image_url: width: 1200 }} 1200w, {{ img | image_url: width: 1600 }} 1600w"
+      sizes="(max-width: 768px) 100vw, {{ section.settings.max_width }}px"
+      width="{{ img.width }}"
+      height="{{ img.height }}"
+      alt="{{ img.alt | default: section.settings.alt_text | escape }}"
+      {%- if section.settings.priority_load %}
+      loading="eager"
+      fetchpriority="high"
+      {%- else %}
+      loading="lazy"
+      {%- endif %}
+    >
+  {%- else -%}
+    <div class="simple-image-placeholder">{{ 'image' | placeholder_svg_tag }}</div>
+  {%- endif -%}
+</div>
+
+<style>
+  .simple-image-{{ section.id }} {
+    display: flex;
+    justify-content: center;
+    background-color: {{ section.settings.background_color }};
+  }
+  .simple-image-{{ section.id }} img {
+    display: block;
+    width: 100%;
+    height: auto;
+    max-width: {{ section.settings.max_width }}px;
+  }
+  .simple-image-{{ section.id }} .simple-image-placeholder {
+    width: 100%;
+    max-width: {{ section.settings.max_width }}px;
+    aspect-ratio: 1 / 1;
+    background: #f5f5f5;
+  }
+  @media (max-width: 768px) {
+    .simple-image-{{ section.id }} img {
+      max-width: 100%;
+    }
+  }
+</style>
+
+{% schema %}
+{
+  "name": "Imagen simple",
+  "tag": "section",
+  "class": "section",
+  "settings": [
+    {
+      "type": "image_picker",
+      "id": "image",
+      "label": "Imagen"
+    },
+    {
+      "type": "text",
+      "id": "alt_text",
+      "label": "Texto alternativo (SEO)",
+      "default": ""
+    },
+    {
+      "type": "range",
+      "id": "max_width",
+      "min": 400,
+      "max": 3000,
+      "step": 50,
+      "unit": "px",
+      "default": 1200,
+      "label": "Ancho máximo (desktop)"
+    },
+    {
+      "type": "checkbox",
+      "id": "priority_load",
+      "label": "Carga prioritaria",
+      "info": "Activar SOLO en la primera imagen de la página (mejora el LCP). Las demás deben quedar en carga diferida.",
+      "default": false
+    },
+    {
+      "type": "color",
+      "id": "background_color",
+      "label": "Color de fondo",
+      "default": "#ffffff"
+    }
+  ],
+  "presets": [
+    {
+      "name": "Imagen simple"
+    }
+  ]
+}
+{% endschema %}
