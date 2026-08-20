@@ -1009,8 +1009,8 @@
         "heading_alignment": "center",
         "heading_size": 52,
         "heading_size_mobile": 36,
-        "heading_color": "#12382c",
-        "subtitle_color": "#48584f",
+        "heading_color": "#ffffff",
+        "subtitle_color": "#d6e6de",
         "title_size": 22,
         "title_size_mobile": 14,
         "title_color": "#12382c",
@@ -1019,7 +1019,7 @@
         "description_color": "#48584f",
         "bullet_size": 13,
         "bullet_size_mobile": 9,
-        "accent_color": "#108474",
+        "accent_color": "#9edfca",
         "use_accent_gradient": false,
         "accent_text_gradient": "",
         "accent_left_margin": 0,
@@ -1028,7 +1028,7 @@
         "accent_font_style": "normal",
         "accent_font_weight": "700",
         "card_background_gradient": "#f4f7f5",
-        "card_border_color": "#12382c",
+        "card_border_color": "#e3ece8",
         "card_border_style": "solid",
         "card_border_width": 1,
         "card_border_radius": 12,
@@ -1045,7 +1045,7 @@
         "padding_bottom": 60,
         "padding_left": 20,
         "padding_right": 20,
-        "section_background_gradient": "#ffffff"
+        "section_background_gradient": "linear-gradient(180deg, rgba(16, 132, 116, 1), rgba(18, 56, 44, 1) 100%)"
       }
     },
     "image_with_text_hmnhFF": {
@@ -1566,7 +1566,7 @@
         "enable_bottom_border": false,
         "bottom_border_width": 1,
         "bottom_border_color": "#000000",
-        "section_background": "linear-gradient(180deg, rgba(166, 186, 180, 1), rgba(129, 193, 173, 1) 96%)",
+        "section_background": "linear-gradient(180deg, rgba(16, 132, 116, 1), rgba(18, 56, 44, 1) 96%)",
         "background_image_position": "center center",
         "background_image_size": "cover",
         "background_image_repeat": "no-repeat",
@@ -1814,35 +1814,45 @@
         "heading_color": "#ffffff",
         "accent_color": "#9edfca",
         "subtitle_color": "#ffffff",
-        "description_color": "#ffffff"
+        "description_color": "#ffffff",
+        "list_background": "linear-gradient(61deg, rgba(255, 255, 255, 0.16), rgba(255, 253, 253, 0.24) 97%)",
+        "border_color": "#9edfca"
       },
       "blocks": {
         "benefit_mtlb1": {
           "type": "benefit",
           "settings": {
             "title": "Amasado Tipo Manos",
-            "description": "Nodos que giran como pulgares y agarran el músculo de verdad, no la vibración superficial que solo hace cosquillas."
+            "description": "Nodos que giran como pulgares y agarran el músculo de verdad, no la vibración superficial que solo hace cosquillas.",
+            "benefit_color": "#ffffff",
+            "benefit_description_color": "#ffffff"
           }
         },
         "benefit_mtlb2": {
           "type": "benefit",
           "settings": {
             "title": "Calor que Prepara la Zona",
-            "description": "Primero afloja el músculo con calor y recién ahí amasa profundo. Por eso se siente, y no lastima."
+            "description": "Primero afloja el músculo con calor y recién ahí amasa profundo. Por eso se siente, y no lastima.",
+            "benefit_color": "#ffffff",
+            "benefit_description_color": "#ffffff"
           }
         },
         "benefit_mtlb3": {
           "type": "benefit",
           "settings": {
             "title": "Sin Cables, Manos Libres",
-            "description": "Batería recargable por USB: te lo colgás y seguís con tu vida en el sofá, la cama o la oficina."
+            "description": "Batería recargable por USB: te lo colgás y seguís con tu vida en el sofá, la cama o la oficina.",
+            "benefit_color": "#ffffff",
+            "benefit_description_color": "#ffffff"
           }
         },
         "benefit_mtlb4": {
           "type": "benefit",
           "settings": {
             "title": "Un Ritual que Sí Podés Sostener",
-            "description": "Sesiones de 10 a 15 minutos mientras ves tele. Tu masajista en casa, sin turnos ni gasto repetido."
+            "description": "Sesiones de 10 a 15 minutos mientras ves tele. Tu masajista en casa, sin turnos ni gasto repetido.",
+            "benefit_color": "#ffffff",
+            "benefit_description_color": "#ffffff"
           }
         }
       },
@@ -1858,15 +1868,16 @@
       "name": "Divider",
       "settings": {
         "use_theme_colors": false,
-        "color": "#108474",
-        "background_color": "rgba(0,0,0,0)",
-        "height": 25,
+        "color": "#12382c",
+        "background_color": "transparent",
+        "height": 60,
         "show_border": false,
         "use_gradient": false,
-        "keep_proportion": true,
+        "keep_proportion": false,
         "padding_top": 0,
         "padding_bottom": 0,
-        "divider_style": "wavy"
+        "divider_style": "wavy",
+        "flip_direction": false
       }
     },
     "divider_mtlbD2": {
@@ -1874,15 +1885,16 @@
       "name": "Divider",
       "settings": {
         "use_theme_colors": false,
-        "color": "#108474",
-        "background_color": "rgba(0,0,0,0)",
-        "height": 25,
+        "color": "#12382c",
+        "background_color": "transparent",
+        "height": 60,
         "show_border": false,
         "use_gradient": false,
-        "keep_proportion": true,
+        "keep_proportion": false,
         "padding_top": 0,
         "padding_bottom": 0,
-        "divider_style": "wavy"
+        "divider_style": "wavy",
+        "flip_direction": false
       }
     },
     "divider_mtlbD3": {
@@ -1890,15 +1902,16 @@
       "name": "Divider",
       "settings": {
         "use_theme_colors": false,
-        "color": "#108474",
-        "background_color": "rgba(0,0,0,0)",
-        "height": 25,
+        "color": "#12382c",
+        "background_color": "transparent",
+        "height": 60,
         "show_border": false,
         "use_gradient": false,
-        "keep_proportion": true,
+        "keep_proportion": false,
         "padding_top": 0,
         "padding_bottom": 0,
-        "divider_style": "wavy"
+        "divider_style": "wavy",
+        "flip_direction": false
       }
     },
     "image_with_text_mtlbIW": {
