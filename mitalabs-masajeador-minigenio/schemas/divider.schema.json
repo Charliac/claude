@@ -1,0 +1,140 @@
+{
+  "name": "Divider",
+  "tag": "section",
+  "class": "section section-divider",
+  "disabled_on": {
+    "groups": ["header", "footer"]
+  },
+  "settings": [
+    {
+      "type": "checkbox",
+      "id": "use_theme_colors",
+      "label": "Use theme colors",
+      "default": true,
+      "info": "When enabled, divider color uses your theme accent and background uses your section background."
+    },
+    {
+      "type": "select",
+      "id": "divider_style",
+      "label": "Divider style",
+      "options": [
+        { "value": "cloud", "label": "Cloud" },
+        { "value": "wavy", "label": "Wavy" },
+        { "value": "diagonal", "label": "Diagonal" },
+        { "value": "gradient", "label": "Gradient rectangle" }
+      ],
+      "default": "wavy"
+    },
+    {
+      "type": "color",
+      "id": "background_color",
+      "label": "Background color",
+      "default": "transparent",
+      "info": "Used when “Use theme colors” is off."
+    },
+    {
+      "type": "checkbox",
+      "id": "flip_direction",
+      "label": "Flip vertically",
+      "default": false,
+      "info": "Turns the shape upside down."
+    },
+    {
+      "type": "checkbox",
+      "id": "keep_proportion",
+      "label": "Keep SVG proportions",
+      "default": false,
+      "info": "Avoids stretching on extreme aspect ratios. If off, the divider stretches to fill the width."
+    },
+    {
+      "type": "color",
+      "id": "color",
+      "label": "Divider color",
+      "default": "#e0e0e0",
+      "info": "Used when “Use theme colors” is off."
+    },
+    {
+      "type": "range",
+      "id": "height",
+      "min": 10,
+      "max": 200,
+      "step": 5,
+      "unit": "px",
+      "label": "Height",
+      "default": 50
+    },
+
+    { "type": "header", "content": "Border" },
+    {
+      "type": "checkbox",
+      "id": "show_border",
+      "label": "Show border",
+      "default": false
+    },
+    {
+      "type": "color",
+      "id": "border_color",
+      "label": "Border color",
+      "default": "#e0e0e0"
+    },
+    {
+      "type": "range",
+      "id": "border_width",
+      "min": 1,
+      "max": 10,
+      "step": 1,
+      "unit": "px",
+      "label": "Border width",
+      "default": 1
+    },
+    {
+      "type": "select",
+      "id": "border_style",
+      "label": "Border style",
+      "options": [
+        { "value": "solid", "label": "Solid" },
+        { "value": "dashed", "label": "Dashed" },
+        { "value": "dotted", "label": "Dotted" }
+      ],
+      "default": "solid"
+    },
+
+    { "type": "header", "content": "Gradient" },
+    {
+      "type": "checkbox",
+      "id": "use_gradient",
+      "label": "Use gradient fill",
+      "default": false,
+      "info": "Applies the gradient to the divider (ignored for ‘Gradient rectangle’, which is always gradient)."
+    },
+    {
+      "type": "color_background",
+      "id": "gradient_background",
+      "label": "Gradient",
+      "default": "linear-gradient(135deg, #667eea 0%, #764ba2 100%)"
+    },
+
+    { "type": "header", "content": "Spacing" },
+    {
+      "type": "range",
+      "id": "padding_top",
+      "min": 0,
+      "max": 100,
+      "step": 2,
+      "unit": "px",
+      "label": "Top padding",
+      "default": 20
+    },
+    {
+      "type": "range",
+      "id": "padding_bottom",
+      "min": 0,
+      "max": 100,
+      "step": 2,
+      "unit": "px",
+      "label": "Bottom padding",
+      "default": 20
+    }
+  ],
+  "presets": [{ "name": "Divider" }]
+}

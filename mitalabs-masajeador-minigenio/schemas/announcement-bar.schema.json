@@ -1,0 +1,192 @@
+{
+  "name": "Countdown Banner",
+  "tag": "section",
+  "settings": [
+    {
+      "type": "checkbox",
+      "id": "use_theme_colors",
+      "label": "Use Theme Colors",
+      "default": true,
+      "info": "Apply the global theme colors to this section"
+    },
+    {
+      "type": "checkbox",
+      "id": "sticky_with_header",
+      "label": "Stick with Header",
+      "default": false,
+      "info": "Makes the announcement bar sticky and scroll with the site header"
+    },    {
+      "type": "header",
+      "content": "Content"
+    },
+    {
+      "type": "inline_richtext",
+      "id": "announcement_text",
+      "label": "Announcement Text",
+      "default": "HOLIDAY SALE ENDS IN",
+      "info": "You can use bold and italic formatting in your announcement text"
+    },
+    {
+      "type": "header",
+      "content": "Timer Settings"
+    },
+    {
+      "type": "checkbox",
+      "id": "show_days",
+      "label": "Show Days",
+      "default": false
+    },
+    {
+      "type": "checkbox",
+      "id": "custom_date",
+      "label": "Use Custom End Date",
+      "default": false,
+      "info": "If unchecked, countdown will be to next midnight EST"
+    },
+    {
+      "type": "text",
+      "id": "end_date",
+      "label": "End Date (YYYY-MM-DD HH:MM:SS)",
+      "default": "2023-12-31 23:59:59",
+      "info": "Format: YYYY-MM-DD HH:MM:SS"
+    },
+    {
+      "type": "select",
+      "id": "timezone",
+      "label": "Timezone for Midnight Reset",
+      "options": [
+        { "value": "America/New_York", "label": "Eastern Time (EST/EDT)" },
+        { "value": "America/Chicago", "label": "Central Time (CST/CDT)" },
+        { "value": "America/Denver", "label": "Mountain Time (MST/MDT)" },
+        { "value": "America/Los_Angeles", "label": "Pacific Time (PST/PDT)" },
+        { "value": "America/Anchorage", "label": "Alaska Time (AKST/AKDT)" },
+        { "value": "Pacific/Honolulu", "label": "Hawaii Time (HST)" },
+        { "value": "Europe/London", "label": "GMT/BST (London)" },
+        { "value": "Europe/Paris", "label": "CET/CEST (Paris)" },
+        { "value": "Europe/Berlin", "label": "CET/CEST (Berlin)" },
+        { "value": "Asia/Tokyo", "label": "JST (Tokyo)" },
+        { "value": "Asia/Shanghai", "label": "CST (Shanghai)" },
+        { "value": "Australia/Sydney", "label": "AEST/AEDT (Sydney)" }
+      ],
+      "default": "America/New_York",
+      "info": "Choose the timezone for when the daily countdown resets at midnight"
+    },    {
+      "type": "text",
+      "id": "days_label",
+      "label": "Days Label",
+      "default": "DAYS"
+    },
+    {
+      "type": "text",
+      "id": "hours_label",
+      "label": "Hours Label",
+      "default": "HRS"
+    },
+    {
+      "type": "text",
+      "id": "minutes_label",
+      "label": "Minutes Label",
+      "default": "MIN"
+    },
+    {
+      "type": "text",
+      "id": "seconds_label",
+      "label": "Seconds Label",
+      "default": "SEC"
+    },
+    {
+      "type": "header",
+      "content": "Style"
+    },
+    {
+      "type": "color",
+      "id": "text_color",
+      "label": "Text Color",
+      "default": "#000000"
+    },
+    {
+      "type": "color",
+      "id": "timer_bg_color",
+      "label": "Timer Background Color",
+      "default": "#000000"
+    },
+    {
+      "type": "color",
+      "id": "timer_text_color",
+      "label": "Timer Text Color",
+      "default": "#FFFFFF"
+    },
+    {
+      "type": "color",
+      "id": "label_text_color",
+      "label": "Label Text Color",
+      "default": "#FFFFFF"
+    },
+    {
+      "type": "select",
+      "id": "background_type",
+      "label": "Section Background Type",
+      "options": [
+        { "value": "animated_gradient", "label": "Animated Gradient" },
+        { "value": "static_gradient", "label": "Static Gradient" },
+        { "value": "solid", "label": "Solid Color" }
+      ],
+      "default": "animated_gradient"
+    },
+    {
+      "type": "checkbox",
+      "id": "hide_shine_effect",
+      "label": "Hide Shine Effect",
+      "default": false,
+      "info": "Remove the animated shine/shimmer effect on the background"
+    },
+    {
+      "type": "color_background",
+      "id": "static_gradient_value",
+      "label": "Static Gradient",
+      "default": "linear-gradient(135deg, #FFF5EA, #FF99A9)",
+      "visible_if": "{{ section.settings.background_type == 'static_gradient' }}"
+    },
+    {
+      "type": "color",
+      "id": "solid_bg_color",
+      "label": "Solid Background Color",
+      "default": "#FF99A9",
+      "visible_if": "{{ section.settings.background_type == 'solid' }}"
+    },
+    {
+      "type": "color",
+      "id": "gradient_color_1",
+      "label": "Gradient Color 1",
+      "default": "#FFF5EA",
+      "visible_if": "{{ section.settings.background_type == 'animated_gradient' }}"
+    },
+    {
+      "type": "color",
+      "id": "gradient_color_2",
+      "label": "Gradient Color 2",
+      "default": "#FFDAE0",
+      "visible_if": "{{ section.settings.background_type == 'animated_gradient' }}"
+    },
+    {
+      "type": "color",
+      "id": "gradient_color_3",
+      "label": "Gradient Color 3",
+      "default": "#FDFFE7",
+      "visible_if": "{{ section.settings.background_type == 'animated_gradient' }}"
+    },
+    {
+      "type": "color",
+      "id": "gradient_color_4",
+      "label": "Gradient Color 4",
+      "default": "#FF99A9",
+      "visible_if": "{{ section.settings.background_type == 'animated_gradient' }}"
+    }
+  ],
+  "presets": [
+    {
+      "name": "Countdown Banner",
+      "category": "Promotional"
+    }
+  ]
+}

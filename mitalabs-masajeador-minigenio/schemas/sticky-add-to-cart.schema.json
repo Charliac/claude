@@ -1,0 +1,428 @@
+{
+  "name": "Sticky Add to Cart",
+  "tag": "section",
+  "class": "sticky-add-to-cart",
+  "settings": [
+    {
+      "type": "paragraph",
+      "content": "Displays a sticky bar at the bottom of the page. Can add to cart, scroll to a section, scroll to a page percentage, or link to a URL. Works on both product and non-product pages."
+    },
+    {
+      "type": "header",
+      "content": "Trigger Behavior"
+    },
+    {
+      "type": "select",
+      "id": "trigger_behavior",
+      "label": "Sticky Bar Trigger",
+      "options": [
+        { "value": "atc_button", "label": "Show after scrolling past ATC button" },
+        { "value": "always_except_atc", "label": "Always show (hide only when ATC is visible)" },
+        { "value": "scroll_percentage", "label": "Show after scroll percentage reached" }
+      ],
+      "default": "atc_button"
+    },
+    {
+      "type": "range",
+      "id": "scroll_percentage_trigger",
+      "min": 5,
+      "max": 100,
+      "step": 5,
+      "unit": "%",
+      "label": "Scroll Percentage to Trigger",
+      "default": 25,
+      "visible_if": "{{ section.settings.trigger_behavior == 'scroll_percentage' }}"
+    },
+    {
+      "type": "header",
+      "content": "Button Behavior"
+    },
+    {
+      "type": "select",
+      "id": "select_button_behavior",
+      "label": "Select button behavior",
+      "options": [
+        { "value": "atc", "label": "Add to cart" },
+        { "value": "scroll_to_section", "label": "Scroll to section" },
+        { "value": "scroll_to_percentage", "label": "Scroll to page percentage" },
+        { "value": "link", "label": "Go to link" }
+      ],
+      "default": "atc"
+    },
+    {
+      "type": "number",
+      "id": "scroll_to_section_number",
+      "label": "Scroll to Section Number",
+      "info": "Enter a section number (e.g., 5 for the 5th section). Use the helper below to find section numbers.",
+      "visible_if": "{{ section.settings.select_button_behavior == 'scroll_to_section' }}"
+    },
+    {
+      "type": "checkbox",
+      "id": "show_section_numbers",
+      "label": "Show Section Number Helper",
+      "default": false,
+      "info": "Shows numbered labels on each section. Find your target section's number, enter it above, then turn this off.",
+      "visible_if": "{{ section.settings.select_button_behavior == 'scroll_to_section' }}"
+    },
+    {
+      "type": "range",
+      "id": "scroll_offset",
+      "min": -100,
+      "max": 100,
+      "step": 5,
+      "unit": "px",
+      "label": "Scroll Offset (Fine Tuning)",
+      "default": 0,
+      "info": "Add extra spacing above the target section. Header height is handled automatically.",
+      "visible_if": "{{ section.settings.select_button_behavior == 'scroll_to_section' }}"
+    },
+    {
+      "type": "range",
+      "id": "scroll_to_percentage",
+      "min": 5,
+      "max": 100,
+      "step": 1,
+      "unit": "%",
+      "label": "Scroll to Page Percentage",
+      "default": 50,
+      "info": "Scroll to this percentage of the page (e.g., 50% = halfway).",
+      "visible_if": "{{ section.settings.select_button_behavior == 'scroll_to_percentage' }}"
+    },
+    {
+      "type": "url",
+      "id": "button_link",
+      "label": "Button Link",
+      "info": "Enter the URL the button should go to.",
+      "visible_if": "{{ section.settings.select_button_behavior == 'link' }}"
+    },
+    {
+      "type": "header",
+      "content": "Content"
+    },
+    {
+      "type": "image_picker",
+      "id": "fallback_image",
+      "label": "Fallback Product Image",
+      "info": "Used when this section is placed on a non-product page."
+    },
+    {
+      "type": "text",
+      "id": "fallback_title",
+      "label": "Fallback Product Title",
+      "info": "Used when this section is placed on a non-product page."
+    },
+    {
+      "type": "text",
+      "id": "button_text",
+      "label": "Button Text",
+      "default": "CLAIM OFFER",
+      "info": "Enter plain text to display as-is, or use a translation key like 'sections.add_to_cart.button_text' to enable localization."
+    },
+    {
+      "type": "text",
+      "id": "rating_text",
+      "label": "Rating Text",
+      "default": "Excellent 4.8 | 1319 reviews",
+      "info": "Add your product's rating information here. Leave blank to completely hide the rating section."
+    },
+    {
+      "type": "checkbox",
+      "id": "satc_toggle_variant",
+      "label": "Toggle variant selector"
+    },
+    {
+      "type": "header",
+      "content": "Delivery Information"
+    },
+    {
+      "type": "checkbox",
+      "id": "turn_off_delivery_date",
+      "label": "Turn Off Delivery Date",
+      "default": false,
+      "info": "Check this to hide the delivery date information on both desktop and mobile views."
+    },
+    {
+      "type": "range",
+      "id": "delivery_days",
+      "min": 1,
+      "max": 14,
+      "step": 1,
+      "default": 5,
+      "label": "Delivery Days Ahead"
+    },
+    {
+      "type": "text",
+      "id": "delivery_text_prefix",
+      "label": "Delivery Text Prefix",
+      "default": "Arrives by"
+    },
+    {
+      "type": "select",
+      "id": "delivery_date_display_format",
+      "label": "Delivery Date Display Format",
+      "options": [
+        { "value": "weekday_month_day", "label": "Weekday, Month Day (e.g., Monday, Jan 5)" },
+        { "value": "month_day_weekday", "label": "Month Day, Weekday (e.g., Jan 5, Monday)" },
+        { "value": "month_day", "label": "Month Day (e.g., Jan 5)" },
+        { "value": "day_month", "label": "Day Month (e.g., 5 Jan)" }
+      ],
+      "default": "weekday_month_day",
+      "info": "Controls how the calculated delivery date is displayed."
+    },
+    {
+      "type": "header",
+      "content": "General Styling"
+    },
+    {
+      "type": "checkbox",
+      "id": "use_theme_colors",
+      "label": "Use Theme Colors",
+      "default": true
+    },
+    {
+      "type": "color",
+      "id": "background_color",
+      "label": "Background Color",
+      "default": "#FFFFFF"
+    },
+    {
+      "type": "color",
+      "id": "star_color",
+      "label": "Accent Color",
+      "default": "#99E9FF",
+      "info": "Used for stars, shipping date, and image border."
+    },
+    {
+      "type": "select",
+      "id": "mobile_style",
+      "label": "Mobile Style",
+      "options": [
+        { "value": "default", "label": "Default" },
+        { "value": "transparent", "label": "Transparent Background" },
+        { "value": "full_width", "label": "Full-Width Button" }
+      ],
+      "default": "default",
+      "info": "Controls the mobile appearance of the sticky bar."
+    },
+    {
+      "type": "range",
+      "id": "z_index",
+      "min": 100,
+      "max": 9900,
+      "step": 100,
+      "default": 9900,
+      "label": "Z-Index Value",
+      "info": "Increase this value if the sticky bar appears behind other elements."
+    },
+    {
+      "type": "header",
+      "content": "Title Styling"
+    },
+    {
+      "type": "color",
+      "id": "title_color",
+      "label": "Title Color",
+      "default": "#000000"
+    },
+    {
+      "type": "range",
+      "id": "title_desktop_font_size",
+      "min": 10,
+      "max": 30,
+      "step": 1,
+      "unit": "px",
+      "label": "Title Desktop Font Size",
+      "default": 16
+    },
+    {
+      "type": "range",
+      "id": "title_mobile_font_size",
+      "min": 10,
+      "max": 24,
+      "step": 1,
+      "unit": "px",
+      "label": "Title Mobile Font Size",
+      "default": 14
+    },
+    {
+      "type": "range",
+      "id": "title_letter_spacing",
+      "min": -2,
+      "max": 5,
+      "step": 0.1,
+      "unit": "px",
+      "label": "Title Letter Spacing",
+      "default": 0
+    },
+    {
+      "type": "header",
+      "content": "Button Styling"
+    },
+    {
+      "type": "checkbox",
+      "id": "use_global_button_styling",
+      "label": "Use Global Button Styling",
+      "default": true,
+      "info": "When enabled, button will use theme's global button styling. When disabled, use custom settings below."
+    },
+    {
+      "type": "range",
+      "id": "custom_button_padding_y",
+      "min": 5,
+      "max": 30,
+      "step": 1,
+      "unit": "px",
+      "label": "Custom Button Vertical Padding",
+      "default": 15,
+      "info": "Only applies when 'Use Global Button Styling' is disabled."
+    },
+    {
+      "type": "range",
+      "id": "custom_button_font_size",
+      "min": 10,
+      "max": 24,
+      "step": 1,
+      "unit": "px",
+      "label": "Custom Button Font Size",
+      "default": 14,
+      "info": "Only applies when 'Use Global Button Styling' is disabled."
+    },
+    {
+      "type": "color",
+      "id": "button_bg_color",
+      "label": "Button Background Color",
+      "default": "#EF4A65"
+    },
+    {
+      "type": "color",
+      "id": "button_hover_color",
+      "label": "Button Hover Color",
+      "default": "#7BDBF1"
+    },
+    {
+      "type": "color",
+      "id": "button_text_color",
+      "label": "Button Text Color",
+      "default": "#FFFFFF"
+    },
+    {
+      "type": "range",
+      "id": "border_radius",
+      "min": 0,
+      "max": 20,
+      "step": 1,
+      "default": 6,
+      "label": "Button Border Radius"
+    },
+    {
+      "type": "header",
+      "content": "Rating Text Styling"
+    },
+    {
+      "type": "color",
+      "id": "rating_text_color",
+      "label": "Rating Text Color",
+      "default": "#333333"
+    },
+    {
+      "type": "select",
+      "id": "rating_text_font_weight",
+      "label": "Rating Text Font Weight",
+      "options": [
+        { "value": "var(--font-weight-regular)", "label": "Regular" },
+        { "value": "var(--font-weight-medium)", "label": "Medium" },
+        { "value": "var(--font-weight-semibold)", "label": "Semi-bold" },
+        { "value": "var(--font-weight-bold)", "label": "Bold" }
+      ],
+      "default": "var(--font-weight-regular)"
+    },
+    {
+      "type": "range",
+      "id": "rating_text_desktop_font_size",
+      "min": 8,
+      "max": 24,
+      "step": 1,
+      "unit": "px",
+      "label": "Rating Text Desktop Font Size",
+      "default": 14
+    },
+    {
+      "type": "range",
+      "id": "rating_text_mobile_font_size",
+      "min": 8,
+      "max": 20,
+      "step": 1,
+      "unit": "px",
+      "label": "Rating Text Mobile Font Size",
+      "default": 14
+    },
+    {
+      "type": "range",
+      "id": "rating_text_letter_spacing",
+      "min": -2,
+      "max": 3,
+      "step": 0.1,
+      "unit": "px",
+      "label": "Rating Text Letter Spacing",
+      "default": 0
+    },
+    {
+      "type": "header",
+      "content": "Delivery Text Styling"
+    },
+    {
+      "type": "color",
+      "id": "delivery_text_color",
+      "label": "Delivery Text Color",
+      "default": "#333333"
+    },
+    {
+      "type": "select",
+      "id": "delivery_text_font_weight",
+      "label": "Delivery Text Font Weight",
+      "options": [
+        { "value": "var(--font-weight-regular)", "label": "Regular" },
+        { "value": "var(--font-weight-medium)", "label": "Medium" },
+        { "value": "var(--font-weight-semibold)", "label": "Semi-bold" },
+        { "value": "var(--font-weight-bold)", "label": "Bold" }
+      ],
+      "default": "var(--font-weight-regular)"
+    },
+    {
+      "type": "range",
+      "id": "delivery_text_desktop_font_size",
+      "min": 8,
+      "max": 24,
+      "step": 1,
+      "unit": "px",
+      "label": "Delivery Text Desktop Font Size",
+      "default": 14
+    },
+    {
+      "type": "range",
+      "id": "delivery_text_mobile_font_size",
+      "min": 8,
+      "max": 20,
+      "step": 1,
+      "unit": "px",
+      "label": "Delivery Text Mobile Font Size",
+      "default": 11
+    },
+    {
+      "type": "range",
+      "id": "delivery_text_letter_spacing",
+      "min": -2,
+      "max": 3,
+      "step": 0.1,
+      "unit": "px",
+      "label": "Delivery Text Letter Spacing",
+      "default": 0
+    }
+  ],
+  "presets": [
+    {
+      "name": "Sticky Add to Cart",
+      "category": "Product"
+    }
+  ]
+}

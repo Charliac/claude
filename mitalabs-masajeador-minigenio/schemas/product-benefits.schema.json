@@ -1,0 +1,940 @@
+{
+  "name": "Product Benefits",
+  "tag": "section",
+  "settings": [
+    {
+      "type": "header",
+      "content": "Section Padding"
+    },
+    {
+      "type": "range",
+      "id": "padding_top",
+      "min": 0,
+      "max": 100,
+      "step": 5,
+      "unit": "px",
+      "label": "Top Padding",
+      "default": 50
+    },
+    {
+      "type": "range",
+      "id": "padding_bottom",
+      "min": 0,
+      "max": 100,
+      "step": 5,
+      "unit": "px",
+      "label": "Bottom Padding",
+      "default": 50
+    },
+    {
+      "type": "range",
+      "id": "padding_left",
+      "min": 0,
+      "max": 100,
+      "step": 5,
+      "unit": "px",
+      "label": "Left Padding",
+      "default": 25,
+      "info": "Horizontal padding on the left side of the section"
+    },
+    {
+      "type": "range",
+      "id": "padding_right",
+      "min": 0,
+      "max": 100,
+      "step": 5,
+      "unit": "px",
+      "label": "Right Padding",
+      "default": 25,
+      "info": "Horizontal padding on the right side of the section"
+    },
+    {
+      "type": "header",
+      "content": "Desktop Layout"
+    },
+    {
+      "type": "select",
+      "id": "image_position_desktop",
+      "label": "Media Position on Desktop",
+      "options": [
+        {
+          "value": "right",
+          "label": "Right of content"
+        },
+        {
+          "value": "left",
+          "label": "Left of content"
+        }
+      ],
+      "default": "right",
+      "info": "Choose whether the media (image/video) appears on the left or right side of the content"
+    },
+    {
+      "type": "header",
+      "content": "Typography"
+    },
+    {
+      "type": "range",
+      "id": "heading_size_mobile",
+      "min": 24,
+      "max": 60,
+      "step": 1,
+      "unit": "px",
+      "label": "Heading Size (Mobile)",
+      "default": 34
+    },
+    {
+      "type": "range",
+      "id": "heading_size_desktop",
+      "min": 28,
+      "max": 60,
+      "step": 1,
+      "unit": "px",
+      "label": "Heading Size (Desktop)",
+      "default": 35
+    },
+    {
+      "type": "range",
+      "id": "heading_line_height_mobile",
+      "min": 0.4,
+      "max": 2,
+      "step": 0.1,
+      "label": "Heading Line Height (Mobile)",
+      "default": 1.1
+    },
+    {
+      "type": "range",
+      "id": "heading_line_height_desktop",
+      "min": 0.4,
+      "max": 2,
+      "step": 0.1,
+      "label": "Heading Line Height (Desktop)",
+      "default": 1.1
+    },
+    {
+      "type": "range",
+      "id": "subtitle_size_mobile",
+      "min": 12,
+      "max": 24,
+      "step": 1,
+      "unit": "px",
+      "label": "Subtitle Size (Mobile)",
+      "default": 13
+    },
+    {
+      "type": "range",
+      "id": "subtitle_size_desktop",
+      "min": 13,
+      "max": 28,
+      "step": 1,
+      "unit": "px",
+      "label": "Subtitle Size (Desktop)",
+      "default": 13
+    },
+    {
+      "type": "range",
+      "id": "benefit_title_size_mobile",
+      "min": 12,
+      "max": 24,
+      "step": 1,
+      "unit": "px",
+      "label": "Benefit Title Size (Mobile)",
+      "default": 14
+    },
+    {
+      "type": "range",
+      "id": "benefit_title_size_desktop",
+      "min": 13,
+      "max": 28,
+      "step": 1,
+      "unit": "px",
+      "label": "Benefit Title Size (Desktop)",
+      "default": 14
+    },
+    {
+      "type": "range",
+      "id": "benefit_description_size_mobile",
+      "min": 11,
+      "max": 20,
+      "step": 1,
+      "unit": "px",
+      "label": "Benefit Description Size (Mobile)",
+      "default": 12
+    },
+    {
+      "type": "range",
+      "id": "benefit_description_size_desktop",
+      "min": 12,
+      "max": 22,
+      "step": 1,
+      "unit": "px",
+      "label": "Benefit Description Size (Desktop)",
+      "default": 12
+    },
+    {
+      "type": "color",
+      "id": "accent_color",
+      "label": "Default Accent Color",
+      "default": "#EF4A65",
+      "info": "Default color for benefit icons and titles if not set individually."
+    },
+    {
+      "type": "checkbox",
+      "id": "use_theme_colors",
+      "label": "Apply Theme Colors",
+      "default": true
+    },
+    {
+      "type": "header",
+      "content": "Layout Options"
+    },
+    {
+      "type": "checkbox",
+      "id": "title_below_icon",
+      "label": "Move Title Below Icon",
+      "default": false,
+      "info": "Position the benefit title below the icon, left-aligned above the description"
+    },
+    {
+      "type": "header",
+      "content": "Accent Text Settings"
+    },
+    {
+      "type": "checkbox",
+      "id": "override_global_accent",
+      "label": "Override Global Accent Typography",
+      "default": false,
+      "info": "When enabled, use section-specific accent typography settings below. When disabled, use the global accent typography from Theme Settings > Typography > Accent Typography."
+    },
+    {
+      "type": "header",
+      "content": "Section-Specific Accent Font Settings"
+    },
+    {
+      "type": "select",
+      "id": "accent_font_family",
+      "label": "Section Accent Font Family",
+      "options": [
+        {
+          "value": "inherit",
+          "label": "Use Global Setting"
+        },
+        {
+          "value": "serif",
+          "label": "System Serif"
+        },
+        {
+          "value": "Georgia Pro",
+          "label": "Georgia Pro"
+        },
+        {
+          "value": "Bodoni Moda",
+          "label": "Bodoni Moda"
+        },
+        {
+          "value": "Instrument Serif",
+          "label": "Instrument Serif"
+        },
+        {
+          "value": "DM Serif Text",
+          "label": "DM Serif Text"
+        },
+        {
+          "value": "Nothing You Could Do",
+          "label": "Nothing You Could Do"
+        }
+      ],
+      "default": "inherit",
+      "info": "Choose a custom font family for the accent text (only used when Override Global Accent Typography is enabled)"
+    },
+    {
+      "type": "select",
+      "id": "accent_font_style",
+      "label": "Accent Text Font Style",
+      "options": [
+        {
+          "value": "normal",
+          "label": "Normal"
+        },
+        {
+          "value": "italic",
+          "label": "Italic"
+        }
+      ],
+      "default": "normal",
+      "info": "Choose the font style for the accent text"
+    },
+    {
+      "type": "select",
+      "id": "accent_font_weight",
+      "label": "Accent Text Font Weight",
+      "options": [
+        {
+          "value": "inherit",
+          "label": "Default (Inherit)"
+        },
+        {
+          "value": "300",
+          "label": "Light (300)"
+        },
+        {
+          "value": "400",
+          "label": "Normal (400)"
+        },
+        {
+          "value": "500",
+          "label": "Medium (500)"
+        },
+        {
+          "value": "600",
+          "label": "Semi Bold (600)"
+        },
+        {
+          "value": "700",
+          "label": "Bold (700)"
+        },
+        {
+          "value": "800",
+          "label": "Extra Bold (800)"
+        },
+        {
+          "value": "900",
+          "label": "Black (900)"
+        }
+      ],
+      "default": "inherit",
+      "info": "Choose the font weight (boldness) for the accent text"
+    },
+    {
+      "type": "checkbox",
+      "id": "use_accent_gradient",
+      "label": "Use Accent Gradient",
+      "default": false,
+      "info": "Apply gradient effect to the accent text instead of solid color"
+    },
+    {
+      "type": "color_background",
+      "id": "accent_text_gradient",
+      "label": "Accent Text Gradient",
+      "default": "linear-gradient(45deg, #EF4A65, #FF6B9D)",
+      "info": "Choose a gradient for the accent text. This setting is only used when 'Use Accent Gradient' is enabled above."
+    },
+    {
+      "type": "range",
+      "id": "accent_text_margin_left",
+      "min": -10,
+      "max": 50,
+      "step": 1,
+      "unit": "px",
+      "label": "Accent Text Left Margin",
+      "default": 0
+    },
+    {
+      "type": "color_background",
+      "id": "list_background",
+      "label": "Benefits List Background",
+      "default": "linear-gradient(to bottom, #FFFFFF, #F0F0F0)"
+    },
+    {
+      "type": "range",
+      "id": "list_border_radius",
+      "min": 0,
+      "max": 30,
+      "step": 1,
+      "unit": "px",
+      "label": "Benefits List Border Radius",
+      "default": 20
+    },
+    {
+      "type": "range",
+      "id": "benefits_list_max_width",
+      "min": 300,
+      "max": 800,
+      "step": 10,
+      "unit": "px",
+      "label": "Benefits List Max Width",
+      "default": 450,
+      "info": "Maximum width of the benefits list container"
+    },
+    {
+      "type": "color",
+      "id": "border_color",
+      "label": "Border Color",
+      "default": "#e0e0e0"
+    },
+    {
+      "type": "text",
+      "id": "heading_accent",
+      "label": "Heading Accent Text",
+      "default": "Premium"
+    },
+    {
+      "type": "text",
+      "id": "heading_regular",
+      "label": "Heading Regular Text",
+      "default": "Product Features"
+    },
+    {
+      "type": "textarea",
+      "id": "subtitle",
+      "label": "Subtitle",
+      "default": "Discover the outstanding features that make our product stand out from the competition."
+    },
+          {
+        "type": "checkbox",
+        "id": "show_image",
+        "label": "Show Media",
+        "default": true,
+        "info": "Enable to show image or video in the section"
+      },
+      {
+        "type": "header",
+        "content": "Media Settings"
+      },
+      {
+        "type": "select",
+        "id": "media_type",
+        "label": "Media Type",
+        "options": [
+          {
+            "value": "image",
+            "label": "Image"
+          },
+          {
+            "value": "video",
+            "label": "Video"
+          }
+        ],
+        "default": "image",
+        "info": "Choose whether to display an image or video"
+      },
+      {
+        "type": "image_picker",
+        "id": "feature_image",
+        "label": "Feature Image",
+        "info": "Used when Media Type is set to Image"
+      },
+      {
+        "type": "text",
+        "id": "image_alt",
+        "label": "Image Alt Text",
+        "default": "Feature product image"
+      },
+      {
+        "type": "header",
+        "content": "Video Settings"
+      },
+      {
+        "type": "video",
+        "id": "feature_video",
+        "label": "Feature Video",
+        "info": "Upload a video file. Supports MP4, MOV, and other formats. Used when Media Type is set to Video"
+      },
+      {
+        "type": "image_picker",
+        "id": "video_poster",
+        "label": "Video Poster Image",
+        "info": "Optional: Image to show before video plays"
+      },
+      {
+        "type": "checkbox",
+        "id": "video_autoplay",
+        "label": "Autoplay Video",
+        "default": true,
+        "info": "Video will start playing automatically (muted for browser compatibility)"
+      },
+      {
+        "type": "checkbox",
+        "id": "video_muted",
+        "label": "Mute Video",
+        "default": true,
+        "info": "Video will be muted by default (required for autoplay)"
+      },
+      {
+        "type": "checkbox",
+        "id": "video_loop",
+        "label": "Loop Video",
+        "default": true,
+        "info": "Video will restart when it reaches the end"
+      },
+          {
+            "type": "checkbox",
+            "id": "video_controls",
+            "label": "Show Video Controls",
+            "default": false,
+            "info": "Display play/pause and volume controls"
+          },
+          {
+            "type": "header",
+            "content": "Mobile Image Settings"
+          },
+          {
+            "type": "checkbox",
+            "id": "mobile_image_full_width",
+            "label": "Full Width Image on Mobile",
+            "default": false,
+            "info": "Make the image span the full width of the screen on mobile devices"
+          },
+          {
+            "type": "checkbox",
+            "id": "hide_media_on_desktop",
+            "label": "Hide Media Image on Desktop",
+            "default": false,
+            "info": "Hide the media image on desktop (useful when using background image on desktop and media image on mobile)"
+          },
+          {
+            "type": "header",
+            "content": "Desktop Image Settings"
+          },
+          {
+            "type": "checkbox",
+            "id": "image_column_full_height",
+            "label": "Full Height Image on Desktop",
+            "default": false,
+            "info": "Make the image column span the full height of the section on desktop"
+          },
+          {
+            "type": "range",
+            "id": "image_margin_top",
+            "min": -50,
+            "max": 100,
+            "step": 5,
+            "unit": "px",
+            "label": "Image Top Margin",
+            "default": 0,
+            "info": "Space above the image"
+          },
+          {
+            "type": "range",
+            "id": "image_margin_bottom",
+            "min": -50,
+            "max": 100,
+            "step": 5,
+            "unit": "px",
+            "label": "Image Bottom Margin",
+            "default": 20,
+            "info": "Space below the image"
+          },
+          {
+            "type": "header",
+            "content": "Image Border"
+          },
+          {
+            "type": "checkbox",
+            "id": "enable_image_border",
+            "label": "Enable Image Border",
+            "default": false
+          },
+          {
+            "type": "range",
+            "id": "image_border_width",
+            "min": 1,
+            "max": 10,
+            "step": 1,
+            "unit": "px",
+            "label": "Border Width",
+            "default": 1
+          },
+          {
+            "type": "select",
+            "id": "image_border_style",
+            "label": "Border Style",
+            "options": [
+              { "value": "solid", "label": "Solid" },
+              { "value": "dashed", "label": "Dashed" },
+              { "value": "dotted", "label": "Dotted" }
+            ],
+            "default": "solid"
+          },
+          {
+            "type": "color",
+            "id": "image_border_color",
+            "label": "Border Color",
+            "default": "#000000"
+          },
+          {
+            "type": "range",
+            "id": "image_border_radius",
+            "min": 0,
+            "max": 50,
+            "step": 1,
+            "unit": "px",
+            "label": "Image Border Radius",
+            "default": 8
+          },
+    {
+      "type": "color",
+      "id": "heading_color",
+      "label": "Heading Color",
+      "default": "#000000"
+    },
+    {
+      "type": "color",
+      "id": "subtitle_color",
+      "label": "Subtitle Color",
+      "default": "#000000"
+    },
+    {
+      "type": "color",
+      "id": "description_color",
+      "label": "Default Description Color",
+      "default": "#000000",
+      "info": "Default color for benefit descriptions if not set individually."
+    },
+    {
+      "type": "color_background",
+      "id": "section_background",
+      "label": "Section Background",
+      "default": "linear-gradient(to right, #FFFFFF, #F8F8F8)"
+    },
+    {
+      "type": "header",
+      "content": "Background Image"
+    },
+    {
+      "type": "checkbox",
+      "id": "use_background_image",
+      "label": "Use Background Image Instead",
+      "default": false,
+      "info": "Toggle to use a full-width background image instead of section background color"
+    },
+    {
+      "type": "image_picker",
+      "id": "background_image",
+      "label": "Background Image",
+      "info": "Full-width background image for the section"
+    },
+    {
+      "type": "image_picker",
+      "id": "mobile_background_image",
+      "label": "Mobile Background Image",
+      "info": "Optional different background image for mobile devices"
+    },
+    {
+      "type": "select",
+      "id": "background_image_size",
+      "label": "Background Image Size",
+      "options": [
+        {"value": "cover", "label": "Cover"},
+        {"value": "contain", "label": "Contain"},
+        {"value": "auto", "label": "Auto"},
+        {"value": "100% 100%", "label": "Stretch"}
+      ],
+      "default": "cover",
+      "info": "How the background image should be sized"
+    },
+    {
+      "type": "select",
+      "id": "background_image_position_mode",
+      "label": "Position Mode",
+      "options": [
+        {"value": "preset", "label": "Preset Positions"},
+        {"value": "custom", "label": "Custom Focal Point"}
+      ],
+      "default": "preset",
+      "info": "Choose between preset positions or custom focal point control"
+    },
+    {
+      "type": "select",
+      "id": "background_image_position",
+      "label": "Background Image Position",
+      "options": [
+        {"value": "center center", "label": "Center Center"},
+        {"value": "center top", "label": "Center Top"},
+        {"value": "center bottom", "label": "Center Bottom"},
+        {"value": "left center", "label": "Left Center"},
+        {"value": "right center", "label": "Right Center"},
+        {"value": "left top", "label": "Left Top"},
+        {"value": "right top", "label": "Right Top"},
+        {"value": "left bottom", "label": "Left Bottom"},
+        {"value": "right bottom", "label": "Right Bottom"}
+      ],
+      "default": "center center",
+      "info": "Only used when Position Mode is set to 'Preset Positions'"
+    },
+    {
+      "type": "range",
+      "id": "background_focal_point_x",
+      "min": 0,
+      "max": 100,
+      "step": 1,
+      "unit": "%",
+      "label": "Horizontal Focal Point",
+      "default": 50,
+      "info": "0% = left edge, 50% = center, 100% = right edge. Only used when Position Mode is set to 'Custom Focal Point'"
+    },
+    {
+      "type": "range",
+      "id": "background_focal_point_y",
+      "min": 0,
+      "max": 100,
+      "step": 1,
+      "unit": "%",
+      "label": "Vertical Focal Point",
+      "default": 50,
+      "info": "0% = top edge, 50% = center, 100% = bottom edge. Only used when Position Mode is set to 'Custom Focal Point'"
+    },
+    {
+      "type": "select",
+      "id": "background_image_attachment",
+      "label": "Background Image Attachment",
+      "options": [
+        {"value": "scroll", "label": "Scroll"},
+        {"value": "fixed", "label": "Fixed (Parallax)"}
+      ],
+      "default": "scroll",
+      "info": "Fixed creates a parallax effect but may not work on mobile devices"
+    },
+    {
+      "type": "checkbox",
+      "id": "background_overlay_enable",
+      "label": "Enable Background Overlay",
+      "default": false,
+      "info": "Add a color overlay on top of the background image"
+    },
+    {
+      "type": "color",
+      "id": "background_overlay_color",
+      "label": "Overlay Color",
+      "default": "rgba(0,0,0,0.3)",
+      "info": "Color of the overlay (supports transparency)"
+    },
+    {
+      "type": "range",
+      "id": "background_overlay_opacity",
+      "min": 0,
+      "max": 100,
+      "step": 5,
+      "unit": "%",
+      "label": "Overlay Opacity",
+      "default": 30,
+      "info": "Opacity of the background overlay"
+    },
+    {
+      "type": "header",
+      "content": "Section Borders"
+    },
+    {
+      "type": "checkbox",
+      "id": "enable_top_border",
+      "label": "Enable Top Border",
+      "default": false,
+      "info": "Add a border to the top of the section"
+    },
+    {
+      "type": "range",
+      "id": "top_border_width",
+      "min": 1,
+      "max": 10,
+      "step": 1,
+      "unit": "px",
+      "label": "Top Border Width",
+      "default": 1,
+      "info": "Width of the top border in pixels"
+    },
+    {
+      "type": "select",
+      "id": "top_border_style",
+      "label": "Top Border Style",
+      "options": [
+        {"value": "solid", "label": "Solid"},
+        {"value": "dashed", "label": "Dashed"},
+        {"value": "dotted", "label": "Dotted"},
+        {"value": "double", "label": "Double"}
+      ],
+      "default": "solid",
+      "info": "Style of the top border"
+    },
+    {
+      "type": "color",
+      "id": "top_border_color",
+      "label": "Top Border Color",
+      "default": "#e5e5e5",
+      "info": "Color of the top border"
+    },
+    {
+      "type": "checkbox",
+      "id": "enable_bottom_border",
+      "label": "Enable Bottom Border",
+      "default": false,
+      "info": "Add a border to the bottom of the section"
+    },
+    {
+      "type": "range",
+      "id": "bottom_border_width",
+      "min": 1,
+      "max": 10,
+      "step": 1,
+      "unit": "px",
+      "label": "Bottom Border Width",
+      "default": 1,
+      "info": "Width of the bottom border in pixels"
+    },
+    {
+      "type": "select",
+      "id": "bottom_border_style",
+      "label": "Bottom Border Style",
+      "options": [
+        {"value": "solid", "label": "Solid"},
+        {"value": "dashed", "label": "Dashed"},
+        {"value": "dotted", "label": "Dotted"},
+        {"value": "double", "label": "Double"}
+      ],
+      "default": "solid",
+      "info": "Style of the bottom border"
+    },
+    {
+      "type": "color",
+      "id": "bottom_border_color",
+      "label": "Bottom Border Color",
+      "default": "#e5e5e5",
+      "info": "Color of the bottom border"
+    }
+  ],
+  "blocks": [
+    {
+      "type": "benefit",
+      "name": "Benefit",
+      "settings": [
+        {
+          "type": "text",
+          "id": "title",
+          "label": "Title",
+          "default": "Product Feature"
+        },
+        {
+          "type": "textarea",
+          "id": "description",
+          "label": "Description",
+          "default": "Describe how this feature benefits your customers and makes your product stand out."
+        },
+        {
+          "type": "color",
+          "id": "benefit_color",
+          "label": "Benefit Title & Icon Color",
+          "info": "Overrides the default accent color for this specific benefit."
+        },
+        {
+          "type": "color",
+          "id": "benefit_description_color",
+          "label": "Benefit Description Color",
+          "info": "Overrides the default description color for this specific benefit."
+        },
+        {
+          "type": "header",
+          "content": "Icon Settings"
+        },
+        {
+          "type": "range",
+          "id": "icon_size",
+          "label": "Icon Size (px)",
+          "min": 16,
+          "max": 60,
+          "step": 2,
+          "unit": "px",
+          "default": 24,
+          "info": "Size of the icon"
+        },
+        {
+          "type": "checkbox",
+          "id": "use_image",
+          "label": "Use Image Icon",
+          "default": false,
+          "info": "Enable to use an uploaded image as icon (highest priority)"
+        },
+        {
+          "type": "image_picker",
+          "id": "icon_image",
+          "label": "Icon Image"
+        },
+        {
+          "type": "select",
+          "id": "preset_icon",
+          "label": "Preset Icon",
+          "options": [
+            {
+              "value": "check",
+              "label": "Check Mark"
+            },
+            {
+              "value": "clock",
+              "label": "Clock"
+            },
+            {
+              "value": "sparkle",
+              "label": "Sparkle"
+            },
+            {
+              "value": "heart",
+              "label": "Heart"
+            }
+          ],
+          "default": "check",
+          "info": "This icon will be used when custom icon is disabled"
+        },
+        {
+          "type": "checkbox",
+          "id": "use_custom_icon",
+          "label": "Use Custom Icon",
+          "default": false,
+          "info": "Enable to use your own SVG icon (used if image icon is disabled)"
+        },
+        {
+          "type": "textarea",
+          "id": "custom_icon_svg",
+          "label": "Custom SVG Icon",
+          "default": "<svg xmlns=\"http://www.w3.org/2000/svg\" viewBox=\"0 0 24 24\" fill=\"currentColor\"><path d=\"M9 16.17L4.83 12l-1.42 1.41L9 19 21 7l-1.41-1.41z\"/></svg>",
+          "info": "Paste your custom SVG code here. For best results, use an SVG with viewBox attribute and currentColor fill."
+        }
+      ]
+    }
+  ],
+  "presets": [
+    {
+      "name": "Product Benefits",
+      "settings": {
+        "accent_color": "#EF4A65",
+        "section_background": "linear-gradient(to right, #FFFFFF, #F8F8F8)",
+        "list_background": "linear-gradient(to bottom, #FFFFFF, #F0F0F0)",
+        "accent_text_gradient": "linear-gradient(45deg, #EF4A65, #FF6B9D)",
+        "heading_accent": "Premium",
+        "heading_regular": "Product Features",
+        "subtitle": "Discover the outstanding features that make our product stand out from the competition."
+      },
+      "blocks": [
+        {
+          "type": "benefit",
+          "settings": {
+            "title": "High Quality Materials",
+            "description": "Made with premium materials that are built to last and deliver exceptional performance.",
+            "preset_icon": "check"
+          }
+        },
+        {
+          "type": "benefit",
+          "settings": {
+            "title": "Easy to Use Design",
+            "description": "Intuitive design makes this product simple to use, saving you valuable time and effort.",
+            "preset_icon": "clock"
+          }
+        },
+        {
+          "type": "benefit",
+          "settings": {
+            "title": "Multiple Configuration Options",
+            "description": "Customize your experience with various settings to meet your specific needs.",
+            "preset_icon": "sparkle"
+          }
+        },
+        {
+          "type": "benefit",
+          "settings": {
+            "title": "Long-Term Value",
+            "description": "A smart investment that pays for itself over time with its durability and efficiency.",
+            "preset_icon": "heart"
+          }
+        }
+      ]
+    }
+  ]
+}

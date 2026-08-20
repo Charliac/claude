@@ -1,0 +1,345 @@
+
+==========================================================================================
+### 00_HG_header.html  (22198 bytes)
+WRAPPER: <div> classes=['shopify-section', 'shopify-section-group-header-group', 'section-header']
+  STYLE padding: padding-bottom: 1rem | padding-top: 1rem | padding-bottom: 0.5rem | padding-top: 0.5rem
+  STYLE bg/colors: --color-header-foreground: #211a28
+  STYLE padding: padding-top: 0px | padding-bottom: 0px
+  SCRIPT src: cart-notification.js
+  li: LINKS: 3
+  li: Inicio
+  li: Catálogo
+  li: Contacto
+  li: Twitter
+  li: Facebook
+  li: Instagram
+  li: TikTok
+  li: YouTube
+  [a] 'Iniciar sesión' -> https://minigenio.store/customer_authentication/redirect?loc
+  [a] 'Carrito' -> /cart
+  IMG: Diseno_sin_titulo_23.png  alt='MiniGenios' w=220
+  INPUT[search] name=q value=
+  INPUT[hidden] name=options[prefix] value=last
+
+==========================================================================================
+### 01_HG_announcement_bar_V6qkEm.html  (3649 bytes)
+WRAPPER: <div> classes=['shopify-section', 'shopify-section-group-header-group']
+
+==========================================================================================
+### 02_main.html  (126320 bytes)
+WRAPPER: <div> classes=['shopify-section', 'shop-product-section']
+  STYLE bg/colors: background-color: #ffffff | --accent-color: #1a281c | --dot-color: #cccccc | --dot-active-color: #000000 | background: #f8f8f8 | background-color:  !important | background-color: 
+                           
+                          !important | background-color: 
+                               
+                                 #06846c /* Theme - Accent Color */
+                               
+  
+  STYLE padding: padding-bottom: 100% | padding-top: var(--global-button-padding-y, 12px) !important | padding-bottom: var(--global-button-padding-y, 12px) !important
+  STYLE bg/colors: background-color: #e0e0e0
+  STYLE bg/colors: background: linear-gradient(to right, #00b894, #06846c) | background-color: #ffffff | background: linear-gradient(to right, #00b894, #06846c) !important
+  STYLE bg/colors: background: none
+  STYLE padding: padding-top: 15px
+  STYLE bg/colors: background: none
+  STYLE bg/colors: background-color: #fdeeee !important
+  STYLE bg/colors: background-color: #e0e0e0
+  STYLE bg/colors: background: none
+  STYLE bg/colors: background-color: #f2f2f2 | background-color: #ffffff | background-color: transparent
+  STYLE bg/colors: background-color: #f5f5f5 !important | background-color: #4caf50 !important
+  STYLE bg/colors: background: none
+  STYLE bg/colors: background-color: transparent | background-color: #FFFFFF | background-color: #ffffff | background: rgba(0, 0, 0, 0.1) | background: rgba(0, 0, 0, 0.3) | background: rgba(0, 0, 0, 0.5)
+  STYLE bg/colors: background-color: #f8f9fa !important | background: linear-gradient(45deg, #00f2ea, #ff0050) !important | background-color: #f0f0f0 | background: transparent !important | background-color: #211a28 | background-color: #f0f0f0 !important | background: linear-gradient(to bottom, rgba(0,0,0,0.7) 0%, rgba(0,0,0,0) 100%) !important | background: rgba(0, 0, 0, 0.35) !important | background: rgba(0, 0, 0, 
+  STYLE padding: padding-bottom: 10px
+  SCRIPT src: video-carousel.js
+  SCRIPT src: product-details.js
+  SCRIPT src: product-info.js
+  SCRIPT src: variant-selector.js
+  SCRIPT src: product-form.js
+  SCRIPT src: shop-product-details.js
+  SCRIPT src: product-gallery.js
+  H1: Set de 4 Libros Mágicos de aprendizaje
+  H2: Míralo en acción
+  p: Reutilizable / Edad 3-8 Años / Método Montessori
+  p: Excelente
+  p: 4.8 sobre 5
+  p: Precio promocional por stock limitado.
+  p: El Kit Completo de Aprendizaje MagicLab incluye:
+  li: 4 Cuadernos Temáticos: 📘 Alfabeto: Para dominar el abecedario (A-Z).🔢 Números: Aprendizaje del 0 al 100.➕ Matemáticas: Sumas y restas sencillas.🎨 Dibujo: Formas y figuras divertidas.
+  li: 1 Bolígrafo Mágico (Cuerpo del lápiz).
+  li: 5 Recargas de Tinta Especial (Duran meses).
+  li: 1 Adaptador de Agarre (Grip): De silicona suave para corregir la postura de los dedos.
+  p: Nuestro sistema se basa en dos secretos educativos:
+  li: El Sistema de Ranuras (Groove): Las hojas no son planas; tienen canales hundidos. El lápiz encaja en el riel y guía la mano de tu hijo para hacer el trazo perfecto, creando memoria muscular sin esfuerzo.
+  li: La Tinta que Desaparece: Escribe normalmente y observa la magia. Pasados unos 15 a 30 minutos (dependiendo de la humedad), la tinta se desvanece por completo y el cuaderno queda blanco otra vez. ¡Un solo cuaderno sirve p
+  p: Es tan fácil como 1-2-3:
+  li: Prepara el Lápiz: Desenrosca el bolígrafo e inserta una de las recargas de tinta mágica.
+  li: Coloca el Grip: Desliza el adaptador de silicona (pescadito/delfín) en la punta. Asegúrate de que tu hijo coloque el dedo índice y pulgar en las muescas.
+  li: ¡A Trazar!: Abre el libro de "Dibujo" o "Alfabeto" y deja que el niño siga las líneas hundidas. ¡No necesita supervisión constante!
+  p: Este Set MagicLab es perfecto para ti si:
+  li: ✅ Tu hijo tiene "mala letra" o le cuesta agarrar bien el lápiz.
+  li: ✅ Quieres reducir el tiempo que pasan frente a pantallas y celulares .
+  li: ✅ Estás cansado de comprar y tirar cientos de hojas de papel (ahorro ecológico).
+  li: ✅ Buscas un regalo educativo que realmente usen y no termine en el fondo del armario.
+  li: ✅ Quieres prepararlos para el preescolar o primer grado con confianza.
+  li: Asunción y alrededores: entrega estimada 24–48 h .
+  li: Interior: entrega estimada 48–96 h según zona.
+  li: Cambios 30 días por defectos de fabricación. No realizamos devoluciones de dinero salvo casos excepcionales evaluados por soporte.
+  li: Los métodos de pago disponibles se muestran al finalizar la compra.
+  [button] '-' 
+  [button] '+' 
+  [button] 'Comprar ahora - Gs. 179.000 (Gs. 245.000)' 
+  [button] '×' 
+  IMG: Disenosintitulo_3_530x.jpg  alt='Libro para criatura' w=
+  IMG: lan_3_530x.webp  alt='Libro para criatura' w=
+  IMG: 2_70402a1a-19f1-441e-bcf7-cc7d35e13404_530x.webp  alt='Libro para criatura' w=
+  IMG: 4_7d6108d0-5059-47fd-982d-ad71f2532c7e_530x.webp  alt='Libro para criatura' w=
+  IMG: lan_2_d0c1219e-6991-4c39-b033-56eeefc7b4de_530x.webp  alt='Libro para criatura' w=
+  IMG: Mb_4_530x.jpg  alt='Libro para criatura' w=
+  IMG: Mb_10_530x.png  alt='Libro para criatura' w=
+  IMG: Mb_12_530x.png  alt='Libro para criatura' w=
+  IMG: Mb_13_530x.png  alt='Libro para criatura' w=
+  IMG: Disenosintitulo_3_200x@2x.jpg  alt='Libro para criatura' w=
+  IMG: lan_3_200x@2x.webp  alt='Libro para criatura' w=
+  IMG: 2_70402a1a-19f1-441e-bcf7-cc7d35e13404_200x@2x.webp  alt='Libro para criatura' w=
+  IMG: 4_7d6108d0-5059-47fd-982d-ad71f2532c7e_200x@2x.webp  alt='Libro para criatura' w=
+  IMG: lan_2_d0c1219e-6991-4c39-b033-56eeefc7b4de_200x@2x.webp  alt='Libro para criatura' w=
+  IMG: Mb_4_200x@2x.jpg  alt='Libro para criatura' w=
+  IMG: Mb_10_200x@2x.png  alt='Libro para criatura' w=
+  IMG: Mb_12_200x@2x.png  alt='Libro para criatura' w=
+  IMG: Mb_13_200x@2x.png  alt='Libro para criatura' w=
+  IMG: lan_3_50x50_crop_center.webp  alt='User avatar 1' w=
+  IMG: Disenosintitulo_3_50x50_crop_center.jpg  alt='User avatar 2' w=
+  IMG: 553b886fce914640a9288c40ad96e742.thumbnail.0000000000_700x.jpg  alt='Video thumbnail' w=
+  IMG: 553b886fce914640a9288c40ad96e742.thumbnail.0000000000_small.jpg  alt='' w=
+  IMG: 3254e9a91b1445688c0b21ab47f3d2dc.thumbnail.0000000000_700x.jpg  alt='Video thumbnail' w=
+  IMG: 3254e9a91b1445688c0b21ab47f3d2dc.thumbnail.0000000000_small.jpg  alt='' w=
+  IMG: 229c237b504f4a1db701ea03cfaa404e.thumbnail.0000000000_700x.jpg  alt='Video thumbnail' w=
+  IMG: 229c237b504f4a1db701ea03cfaa404e.thumbnail.0000000000_small.jpg  alt='' w=
+  IMG: b7a0708e701f4631b6b9cd3979b6670d.thumbnail.0000000000_700x.jpg  alt='Video thumbnail' w=
+  IMG: b7a0708e701f4631b6b9cd3979b6670d.thumbnail.0000000000_small.jpg  alt='' w=
+  IMG: istockphoto-1483329842-612x612.jpg  alt='Profile picture' w=
+  VIDEO/source: ad96e742/553b886fce914640a9288c40ad96e742.HD-720p-1.6Mbps-77168256.mp4
+  VIDEO/source: 47f3d2dc/3254e9a91b1445688c0b21ab47f3d2dc.HD-720p-1.6Mbps-77168258.mp4
+  VIDEO/source: cfaa404e/229c237b504f4a1db701ea03cfaa404e.HD-720p-1.6Mbps-77168257.mp4
+  VIDEO/source: 79b6670d/b7a0708e701f4631b6b9cd3979b6670d.HD-720p-1.6Mbps-77168466.mp4
+  INPUT[number] name=quantity value=1
+  INPUT[hidden] name=form_type value=product
+  INPUT[hidden] name=utf8 value=✓
+  INPUT[hidden] name=id value=44047441166396
+  INPUT[hidden] name=product-id value=8854389719100
+  INPUT[hidden] name=section-id value=template--19398982860860__main
+
+==========================================================================================
+### 03_scrolling_features_bar_AhP6EL.html  (8420 bytes)
+WRAPPER: <section> classes=['shopify-section', 'section']
+  STYLE bg/colors: --text-color: #ffffff | --icon-color: #ffffff | --background-color: #211a28
+  SCRIPT src: scrolling-features-bar.js
+
+==========================================================================================
+### 04_sticky_add_to_cart_NJqgUd.html  (21153 bytes)
+WRAPPER: <section> classes=['shopify-section', 'section']
+  STYLE bg/colors: background: #ffffff !important | background-color: var(--global-button-bg-color) !important | background-color: var(--global-button-hover-bg-color) !important
+  SCRIPT src: sticky-add-to-cart.js
+  H3: Libro para criatura
+  [button] 'Obtener oferta - 179,000 Gs' 
+  IMG: Disenosintitulo_3_60x60_crop_center.jpg  alt='Libro para criatura' w=
+  INPUT[] name=options[1] value=
+  INPUT[hidden] name=id value=44047441166396
+
+==========================================================================================
+### 05_product_benefits_NWiWMe.html  (15602 bytes)
+WRAPPER: <div> classes=['shopify-section']
+  STYLE bg/colors: background: linear-gradient(180deg, rgba(0, 184, 148, 1), rgba(6, 132, 108, 1) 100%) !import | background: linear-gradient(61deg, rgba(255, 255, 255, 0.2), rgba(255, 253, 253, 0.28) 97%)  | background: #000 | background: #000 !important
+  STYLE padding: padding-top: 50px | padding-bottom: 50px
+  H2: Aprendizaje Real, Lejos de las Pantallas.
+  H2: Aprendizaje Real, Lejos de las Pantallas.
+  H3: Material Seguro y Reutilizable
+  H3: Método Montessori de Ranuras
+  H3: Magia que Invita a Practicar
+  H3: Una Inversión en su Futuro
+  p: Hecho de cartón grueso de alta calidad, diseñado para resistir el uso diario de manitos inquietas. ¡Un solo set dura para miles de prácticas!
+  p: El diseño con canales hundidos guía sus dedos sin esfuerzo, creando memoria muscular y corrigiendo la caligrafía casi sin que se den cuenta.
+  p: La tinta mágica que desaparece convierte la tarea en un juego fascinante. Practican una y otra vez sin la frustración de los borrones ni gastar papel.
+  p: Desarrolla la motricidad fina, la concentración y la paciencia. Habilidades esenciales para la escuela que ninguna tablet puede enseñarles.
+  IMG: Mb_v3_480x480_dae62242-c788-4464-8b22-92c1f0353e37_580x.webp  alt='Feature product image' w=
+
+==========================================================================================
+### 06_divider_Q7nmRz.html  (1003 bytes)
+WRAPPER: <section> classes=['shopify-section', 'section', 'section-divider']
+  STYLE bg/colors: --divider-color: #06846c | background-color: #f8f8f8
+  STYLE padding: padding-top: 0px | padding-bottom: 0px
+
+==========================================================================================
+### 07_image_with_text_9Vm4Bn.html  (56316 bytes)
+WRAPPER: <section> classes=['shopify-section', 'section']
+  STYLE bg/colors: background-color: #000 | background-color: #f5f5f5 | background: linear-gradient(45deg, rgba(6, 132, 108, 1), rgba(0, 184, 148, 1) 100%) !importa | background-color: #ffffff
+  STYLE padding: padding-top: 40px | padding-bottom: 40px | padding-top: 60px | padding-bottom: 60px | padding-top: 15px
+  H2: Caligrafía Perfecta. Y sin peleas.
+  p: Adiós a las peleas por el celular. MagicLab convierte la escritura en un juego mágico que ellos mismos piden. Nuestro método Montessori guía sus manos para mejorar la letra y la concentración, lejos de las pantallas.
+  li: Sistema de Ranuras Guía (Groove)
+  li: Tinta Mágica que Desaparece
+  li: Incluye Adaptador de Agarre Ergonómico
+  li: Reduce el Tiempo en Pantallas
+  li: Desarrollo de Motricidad Fina
+  li: Ahorro Ecológico (Miles de usos)
+  [a] 'Obtener oferta' -> #
+  IMG: ezgif.com-resize_1.gif  alt='Caligrafía Perfecta.' w=
+
+==========================================================================================
+### 08_steps_NPBhYa.html  (31522 bytes)
+WRAPPER: <div> classes=['shopify-section']
+  STYLE bg/colors: --title-color: #000000 | --highlight-color: #00b894 | --subtitle-color: #4a4a4a | --card-border-color: #e0e0e0 | --step-title-color: #000000 | --description-color: #000000 | --number-border-color: #000000 | --number-background-color: #ffffff | --label-color: #000000 | background: linear-gradient(135deg, rgba(255, 255, 255, 1), rgba(248, 248, 248, 1) 100%) !im | background-color: var(--number-backg
+  STYLE padding: padding-top: 60px | padding-bottom: 60px | padding-top: var(--padding-top) !important | padding-bottom: var(--padding-bottom) !important
+  STYLE bg/colors: --image-bg-color: #000000 | --content-bg-color: #ffffff
+  STYLE bg/colors: --image-bg-color: #000000 | --content-bg-color: #ffffff
+  STYLE bg/colors: --image-bg-color: #000000 | --content-bg-color: #ffffff
+  STYLE bg/colors: --image-bg-color: #000000 | --content-bg-color: #ffffff
+  STYLE bg/colors: --image-bg-color: #000000 | --content-bg-color: #ffffff
+  STYLE bg/colors: --image-bg-color: #000000 | --content-bg-color: #ffffff
+  H2: Es tan fácil como 1, 2, 3... ¡Magia!
+  H3: 1. Prepara el Lápiz
+  H3: 2. Sigue las Ranuras
+  H3: 3. Reutilízalo Siempre
+  H3: 1. Prepara el Lápiz
+  H3: 2. Sigue las Ranuras
+  H3: 3. Reutilízalo Siempre
+  p: Coloca la tinta y el adaptador de goma para corregir su postura al instante.
+  p: Los canales 3D del papel guían su mano para escribir perfecto y sin esfuerzo.
+  p: La tinta desaparece sola en minutos. ¡El cuaderno queda nuevo para volver a jugar!
+  IMG: image_13_1_309x.png  alt='1. Prepara el Lápiz' w=
+  IMG: 04_ac787b62-d819-46a3-a558-262b1ff95e14_1_309x.webp  alt='2. Sigue las Ranuras' w=
+  IMG: 02_d2f90cac-7715-49b0-aa10-95ad0f01182f_1_309x.webp  alt='3. Reutilízalo Siempre' w=
+
+==========================================================================================
+### 09_stacked_cards_dYNPWM.html  (27036 bytes)
+WRAPPER: <div> classes=['shopify-section']
+  H2: El Kit Completo de Aprendizaje
+  H3: Libro de Alfabeto
+  H3: Libro de Números
+  H3: Libro de Matemáticas
+  H3: Libro de Dibujo
+  p: Letra clara y legible.
+  p: Del 0 al 100.
+  p: Lógica divertida.
+  p: Arte y Motricidad.
+  IMG: 13_cb241f5a-ff4b-40b0-8155-ca6cd4e94834_1_400x400.jpg  alt='Libro de Alfabeto' w=
+  IMG: 121-27b86d8e142e4e228716764020618265-1024-1024_1_400x400.webp  alt='Libro de Números' w=
+  IMG: 14_1_400x400.jpg  alt='Libro de Matemáticas' w=
+  IMG: 111-62dc983f340fa8dfe916764020618309-1024-1024_1_400x400.webp  alt='Libro de Dibujo' w=
+
+==========================================================================================
+### 10_divider_eHNkdm.html  (1009 bytes)
+WRAPPER: <section> classes=['shopify-section', 'section', 'section-divider']
+  STYLE bg/colors: --divider-color: #06846c | background-color: rgba(0,0,0,0)
+  STYLE padding: padding-top: 0px | padding-bottom: 0px
+
+==========================================================================================
+### 11_before_after_comparison_dg6PAy.html  (21062 bytes)
+WRAPPER: <section> classes=['shopify-section', 'section']
+  STYLE bg/colors: background-color: #f3f4f6 | background: #211a28 | background: #ffffff
+  H2: Menos Pantallas, Más Magia
+  p: Mira la transformación real: pasan de estar hipnotizados por la luz azul del celular a descubrir la alegría de aprender, escribir y conectar contigo.
+  IMG: Disenosintitulo_3.jpg  alt='Despues' w=
+  IMG: Gemini_Generated_Image_exeshzexeshzexes_1_1.png  alt='Antes' w=
+
+==========================================================================================
+### 12_image_with_text_y6Myhk.html  (53325 bytes)
+WRAPPER: <section> classes=['shopify-section', 'section']
+  STYLE bg/colors: background-color: #000 | background-color: #f5f5f5 | background-color: #00b894
+  STYLE padding: padding-top: 40px | padding-bottom: 40px | padding-top: 60px | padding-bottom: 60px | padding-top: 30px
+  H2: ¿Tu hijo enfrenta estos desafíos?
+  H3: Transforma sus retos en confianza.
+  p: Descubre cómo MagicLab transforma sus dificultades en confianza y logros.
+  p: El sistema de ranuras 3D actúa como un riel que guía el lápiz, obligando a la mano a seguir el trazo perfecto.
+  p: Esto crea memoria muscular y corrige la forma de las letras automáticamente sin que el niño se frustre.
+  p: Muchos niños sufren calambres o fatiga por sujetar mal el bolígrafo.
+  p: Nuestro adaptador de silicona (incluido en el kit) posiciona sus dedos en la postura correcta de "pinza" desde el primer segundo, creando un hábito saludable.
+  p: A diferencia de las planas tradicionales que cansan, la "tinta mágica" convierte la tarea en un truco de magia.
+  p: La curiosidad por ver desaparecer el trazo mantiene su atención focalizada lejos de las pantallas por mucho más tiempo.
+  [a] '¡SOLUCIONAR ESTO AHORA!' -> #
+  IMG: cuaderno-magico-27-1d6cb3c622efeb206d17411214914111-1024-1024_1.webp  alt='¿Tu hijo enfrenta estos' w=
+
+==========================================================================================
+### 13_product_comparison_ahRqAP.html  (33442 bytes)
+WRAPPER: <section> classes=['shopify-section', 'section']
+  STYLE bg/colors: background: linear-gradient(175deg, #00b894, #06846c) | background: linear-gradient(deg,  0%,  100%) !important | background: linear-gradient(45deg, rgba(255, 255, 255, 1), rgba(255, 255, 255, 1) 100%) !imp | background: linear-gradient(90deg, #fffdfd47 0%, #ffffff45 100%) | background: rgba(255, 255, 255, 0.2)
+  SCRIPT src: product-comparison.js
+  H2: ¿Por qué elegir MagicLab?
+  H2: ¿Por qué elegir MagicLab?
+  p: La diferencia entre gastar papel y aprender de verdad.
+  IMG: 1_1_150x.png  alt='MagicLab' w=auto
+  IMG: 2_1_150x.png  alt='Otros' w=auto
+
+==========================================================================================
+### 14_divider_kz9pE7.html  (1010 bytes)
+WRAPPER: <section> classes=['shopify-section', 'section', 'section-divider']
+  STYLE bg/colors: --divider-color: #06846c | background-color: rgba(0,0,0,0)
+  STYLE padding: padding-top: 0px | padding-bottom: 20px
+
+==========================================================================================
+### 15_satisfaction_guarantee_J4ypTy.html  (15522 bytes)
+WRAPPER: <section> classes=['shopify-section', 'guarantee-section']
+  STYLE bg/colors: background: linear-gradient(180deg, rgba(253, 255, 255, 1), rgba(248, 253, 255, 1) 100%) | --icon-color: #06846c | --risk-free-color: #06846c | --beauty-revolution-color: #211a28 | --description-color: #211a28 | background: #06846c | --button-text-color: #FFFFFF | --button-border-color: #000000 | --benefit-text-color: #211a28 | --checkmark-color: #06846c | background: transparent !important | back
+  STYLE padding: padding-top: 60px | padding-bottom: 60px
+  SCRIPT src: satisfaction-guarantee.js
+  H2: Garantía de Calidad Asegurada
+  H2: Garantía de Calidad Asegurada
+  p: Tu tranquilidad es nuestra prioridad. Todos nuestros kits MagicLab pasan por un control de calidad antes de salir. Si tu producto llega con algún defecto de fábrica o daño en el envío, estás cubierto: tienes 30 días de g
+  [a] 'Obtener oferta' -> #
+
+==========================================================================================
+### 16_photo_grid_7JFDpT.html  (13429 bytes)
+WRAPPER: <section> classes=['shopify-section', 'section']
+  STYLE bg/colors: background-color: #f8f8f8 | background: linear-gradient(45deg, rgba(0, 184, 148, 1), rgba(6, 132, 108, 1) 100%) | background-color: #f1f1f1 !important | background: linear-gradient(45deg, #833ab4, #fd1d1d, #fcb045) !important | background-color: #f8f9fa !important | background: linear-gradient(45deg, #00f2ea, #ff0050) !important | background: #1877F2 !important
+  STYLE padding: padding-top: 30px | padding-bottom: 30px
+  SCRIPT src: photo-grid-counter.js
+  H2: ¡Más de 5.000 Familias Felices!
+  H3: Galería de pequeños grandes artistas disfrutando su MagicLab en todo Paraguay.
+  IMG: ef0b9709-87ff-424e-bce8-27a59493f8ff-__cr00220220_pt0_sx220_v1___1-6be9be8027ada7b79f16766608290361-1024-1024_2.webp  alt='' w=
+  IMG: emma1-19ba6584052c88b36c16877768812932-1024-1024_2.webp  alt='' w=
+  IMG: cuaderno-magico-24-8e1cdbd1a0adf68bdf17411214782912-1024-1024_1.webp  alt='' w=
+  IMG: nuevo-1-a8d41b5581b80fca9717369713682967-1024-1024_1.webp  alt='' w=
+  IMG: lan_6_be2a1ab4-fb69-4ea9-af56-d127a8b3247c_1.webp  alt='' w=
+  IMG: nuevo-5-ac7b3b80ec30a0b13d17369722218301-1024-1024_1.webp  alt='' w=
+  IMG: nuevo-4-2d037b872b053a41e417369722217313-1024-1024_1.webp  alt='' w=
+  IMG: Gemini_Generated_Image_causpucauspucaus_1.png  alt='' w=
+  IMG: 02_a803cd70-ec6a-4e25-b06c-370c3431695a_2.webp  alt='' w=
+
+==========================================================================================
+### 17_store_faq_Lpd3PW.html  (21636 bytes)
+WRAPPER: <section> classes=['shopify-section', 'section']
+  STYLE padding: padding-top: 20px
+  H2: Preguntas Frecuentes
+  p: Resolvemos tus dudas sobre envíos, formas de pago y cómo funciona la magia.
+  p: ¡Es súper fácil! Solo dale clic al botón verde de "¡HACER PEDIDO AHORA!" , completa tus datos de envío (Nombre, Dirección, Ciudad y Teléfono) y confirma. No necesitas tarjeta de crédito; tomamos tu pedido y lo preparamos
+  p: ¡Sí, claro que sí! Para tu tranquilidad, ofrecemos el servicio de Pago Contra Entrega en casi todo el país. Pagas en efectivo directamente al repartidor cuando te entrega el paquete en la puerta de tu casa. ¡Cero riesgos
+  p: Procesamos los pedidos en 24 horas.
+  li: Asunción y Gran Asunción: Recibes en 24 a 48 horas hábiles.
+  li: Interior del País: Enviamos por transportadora y suele llegar en 48 a 72 horas (2 a 3 días hábiles) dependiendo de tu ciudad.
+  li: Absolutamente. Tu compra está protegida. Si el producto llega con algún defecto de fábrica o sufrió daños en el viaje, tienes 30 días de garantía . Solo escríbenos a nuestro WhatsApp de soporte y gestionaremos el cambio 
+  p: ¡No te preocupes! El kit MagicLab ya viene súper completo. Incluye el bolígrafo y 5 recargas de tinta gratis , lo que te asegura meses y meses de escritura antes de necesitar más.
+
+==========================================================================================
+### 18_FG_footer.html  (10132 bytes)
+WRAPPER: <div> classes=['shopify-section', 'shopify-section-group-footer-group', 'section-custom-footer']
+  STYLE bg/colors: --newsletter-bg-color: #FFFFFF | --newsletter-text-color: #211a28 | --newsletter-button-color: #06846c | --footer-bg-color: #211a28 | --footer-text-color: #FFFFFF | --footer-heading-color: #FFFFFF | --footer-border-color: #FFFFFF | --footer-menu-color: #FFFFFF | --footer-menu-hover-color: #00b894 | --footer-divider-color: #FFFFFF | --localization-label-color: #FFFFFF
+  SCRIPT src: predictive-search.js
+  SCRIPT src: cart-drawer.js
+  SCRIPT src: shop-product-details.js
+  SCRIPT src: facets.js
+  SCRIPT src: swatch.js
+  SCRIPT src: product-form.js
+  SCRIPT src: standard-actions.js
+  H3: Productos
+  H3: Empresa
+  H3: Soporte
+  li: Centro de Ayuda
+  li: Rastrear mi pedido
+  li: Contáctanos
+  li: Preguntas Frecuentes
+  li: Información de Envío
+  li: Devoluciones
+  li: Choosing a selection results in a full page refresh.
+  li: Opens in a new window.
+  [button] 'Agregar al carrito' 
+  INPUT[hidden] name=id value=

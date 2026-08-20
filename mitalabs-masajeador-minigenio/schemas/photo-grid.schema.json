@@ -1,0 +1,713 @@
+{
+  "name": "Photo Grid",
+  "tag": "section",
+  "class": "section",
+  "settings": [
+    {
+      "type": "checkbox",
+      "id": "use_theme_colors",
+      "label": "Use Theme Colors",
+      "default": true,
+      "info": "Apply the global theme colors to this section - background, title text and accent colors"
+    },
+    {
+      "type": "header",
+      "content": "General Settings"
+    },
+    {
+      "type": "text",
+      "id": "title_primary",
+      "label": "Title (Primary Part)",
+      "default": "Loved By"
+    },
+    {
+      "type": "text",
+      "id": "title_accent",
+      "label": "Title (Accent Part)",
+      "default": "5,000+"
+    },
+    {
+      "type": "text",
+      "id": "subtitle",
+      "label": "Subtitle",
+      "default": "A showcase of images"
+    },
+    {
+      "type": "header",
+      "content": "Typography"
+    },
+    {
+      "type": "range",
+      "id": "title_font_size",
+      "min": 16,
+      "max": 72,
+      "step": 2,
+      "unit": "px",
+      "label": "Desktop Title Size",
+      "default": 36
+    },
+    {
+      "type": "range",
+      "id": "title_font_size_mobile",
+      "min": 14,
+      "max": 48,
+      "step": 2,
+      "unit": "px",
+      "label": "Mobile Title Size",
+      "default": 28
+    },
+    {
+      "type": "range",
+      "id": "subtitle_font_size",
+      "min": 12,
+      "max": 32,
+      "step": 1,
+      "unit": "px",
+      "label": "Desktop Subtitle Size",
+      "default": 18
+    },
+    {
+      "type": "range",
+      "id": "subtitle_font_size_mobile",
+      "min": 12,
+      "max": 24,
+      "step": 1,
+      "unit": "px",
+      "label": "Mobile Subtitle Size",
+      "default": 16
+    },
+    {
+      "type": "range",
+      "id": "title_margin_bottom",
+      "min": 0,
+      "max": 60,
+      "step": 4,
+      "unit": "px",
+      "label": "Title Bottom Margin",
+      "default": 20
+    },
+    {
+      "type": "range",
+      "id": "subtitle_margin_bottom",
+      "min": 0,
+      "max": 60,
+      "step": 4,
+      "unit": "px",
+      "label": "Subtitle Bottom Margin",
+      "default": 16
+    },
+    {
+      "type": "select",
+      "id": "text_alignment",
+      "label": "Text alignment",
+      "options": [
+
+        {
+          "value": "left",
+          "label": "Left"
+        },
+        {
+          "value": "center",
+          "label": "Center"
+        },
+        {
+          "value": "right",
+          "label": "Right"
+        }
+      ],
+      "default": "center"
+    },
+    {
+      "type": "color",
+      "id": "title_primary_color",
+      "label": "Primary Title Color",
+      "default": "#000000"
+    },
+    {
+      "type": "color",
+      "id": "title_accent_color",
+      "label": "Accent Title Color",
+      "default": "#EF4A65"
+    },
+    {
+      "type": "header",
+      "content": "Accent Text"
+    },
+    {
+      "type": "checkbox",
+      "id": "use_global_accent_typography",
+      "label": "Use Global Accent Typography",
+      "default": false,
+      "info": "When enabled, the accent text will use the global accent typography settings from Theme Settings > Typography > Accent Typography. When disabled, the section-specific settings below will be used."
+    },
+    {
+      "type": "checkbox",
+      "id": "use_accent_gradient",
+      "label": "Use Accent Gradient",
+      "default": false,
+      "info": "Apply gradient effect to the accent text. This will override the solid accent color."
+    },
+    {
+      "type": "color_background",
+      "id": "accent_text_gradient",
+      "label": "Accent Text Gradient",
+      "default": "linear-gradient(45deg, #EF4A65, #FF6B9D)"
+    },
+    {
+      "type": "header",
+      "content": "Accent Font Settings"
+    },
+    {
+      "type": "select",
+      "id": "accent_font_family",
+      "label": "Accent Text Font Family",
+      "options": [
+        {
+          "value": "inherit",
+          "label": "Default (Inherit)"
+        },
+        {
+          "value": "serif",
+          "label": "System Serif"
+        },
+        {
+          "value": "Georgia Pro",
+          "label": "Georgia Pro"
+        },
+        {
+          "value": "Bodoni Moda",
+          "label": "Bodoni Moda"
+        },
+        {
+          "value": "Instrument Serif",
+          "label": "Instrument Serif"
+        },
+        {
+          "value": "DM Serif Text",
+          "label": "DM Serif Text"
+        },
+        {
+          "value": "Nothing You Could Do",
+          "label": "Nothing You Could Do"
+        }
+      ],
+      "default": "inherit",
+      "info": "Choose a custom font family for the accent text (only used when Global Accent Typography is disabled)"
+    },
+    {
+      "type": "select",
+      "id": "accent_font_style",
+      "label": "Accent Text Font Style",
+      "options": [
+        {
+          "value": "normal",
+          "label": "Normal"
+        },
+        {
+          "value": "italic",
+          "label": "Italic"
+        }
+      ],
+      "default": "normal",
+      "info": "Choose the font style for the accent text (only used when Global Accent Typography is disabled)"
+    },
+    {
+      "type": "select",
+      "id": "accent_font_weight",
+      "label": "Accent Text Font Weight",
+      "options": [
+        {
+          "value": "inherit",
+          "label": "Default (Inherit)"
+        },
+        {
+          "value": "300",
+          "label": "Light (300)"
+        },
+        {
+          "value": "400",
+          "label": "Normal (400)"
+        },
+        {
+          "value": "500",
+          "label": "Medium (500)"
+        },
+        {
+          "value": "600",
+          "label": "Semi Bold (600)"
+        },
+        {
+          "value": "700",
+          "label": "Bold (700)"
+        },
+        {
+          "value": "800",
+          "label": "Extra Bold (800)"
+        },
+        {
+          "value": "900",
+          "label": "Black (900)"
+        }
+      ],
+      "default": "inherit",
+      "info": "Choose the font weight (boldness) for the accent text (only used when Global Accent Typography is disabled)"
+    },
+    {
+      "type": "header",
+      "content": "Social Media Badge"
+    },
+    {
+      "type": "select",
+      "id": "social_badge_type",
+      "label": "Social media badge",
+      "options": [
+        {
+          "value": "none",
+          "label": "None"
+        },
+        {
+          "value": "tiktok",
+          "label": "TikTok"
+        },
+        {
+          "value": "facebook",
+          "label": "Facebook"
+        },
+        {
+          "value": "instagram",
+          "label": "Instagram"
+        }
+      ],
+      "default": "instagram",
+      "info": "When a badge is selected, it will replace the subtitle"
+    },
+    {
+      "type": "text",
+      "id": "view_count",
+      "label": "View count (in millions)",
+      "default": "5.6"
+    },
+    {
+      "type": "text",
+      "id": "badge_text",
+      "label": "Badge prefix text",
+      "default": "Over ",
+      "info": "Text that appears before the view count"
+    },
+    {
+      "type": "text",
+      "id": "badge_suffix",
+      "label": "Badge suffix text",
+      "default": "M Views On TikTok",
+      "info": "Text that appears after the view count"
+    },
+    {
+      "type": "header",
+      "content": "Badge Styling"
+    },
+    {
+      "type": "color",
+      "id": "badge_background_color",
+      "label": "Badge Background Color",
+      "default": "#f8f9fa"
+    },
+    {
+      "type": "color",
+      "id": "badge_text_color",
+      "label": "Badge Text Color",
+      "default": "#262626"
+    },
+    {
+      "type": "checkbox",
+      "id": "use_gradient_text",
+      "label": "Use Platform Gradient Text",
+      "info": "Apply platform-specific gradient colors to badge text",
+      "default": false
+    },
+    {
+      "type": "checkbox",
+      "id": "use_gradient_border",
+      "label": "Use Gradient Border for Badge",
+      "info": "Apply platform-specific gradient border to the social media badge",
+      "default": true
+    },
+    {
+      "type": "range",
+      "id": "badge_border_width",
+      "min": 0,
+      "max": 5,
+      "step": 1,
+      "unit": "px",
+      "label": "Badge Border Width",
+      "default": 1,
+      "info": "Only applies when gradient border is disabled"
+    },
+    {
+      "type": "color",
+      "id": "badge_border_color",
+      "label": "Badge Border Color",
+      "default": "#000000",
+      "info": "Only applies when gradient border is disabled"
+    },
+    {
+      "type": "range",
+      "id": "badge_border_radius",
+      "min": 0,
+      "max": 100,
+      "step": 1,
+      "unit": "px",
+      "label": "Badge Border Radius",
+      "default": 50,
+      "info": "Controls the roundness of the badge corners (999px = fully rounded)"
+    },
+    {
+      "type": "header",
+      "content": "Platform Gradient Colors"
+    },
+    {
+      "type": "color",
+      "id": "tiktok_gradient_color_1",
+      "label": "TikTok Gradient Color 1",
+      "default": "#00f2ea"
+    },
+    {
+      "type": "color",
+      "id": "tiktok_gradient_color_2",
+      "label": "TikTok Gradient Color 2",
+      "default": "#ff0050"
+    },
+    {
+      "type": "color",
+      "id": "facebook_gradient_color_1",
+      "label": "Facebook Gradient Color 1",
+      "default": "#1877F2"
+    },
+    {
+      "type": "color",
+      "id": "facebook_gradient_color_2",
+      "label": "Facebook Gradient Color 2",
+      "default": "#4267B2"
+    },
+    {
+      "type": "color",
+      "id": "instagram_gradient_color_1",
+      "label": "Instagram Gradient Color 1",
+      "default": "#833ab4"
+    },
+    {
+      "type": "color",
+      "id": "instagram_gradient_color_2",
+      "label": "Instagram Gradient Color 2",
+      "default": "#fd1d1d"
+    },
+    {
+      "type": "color",
+      "id": "instagram_gradient_color_3",
+      "label": "Instagram Gradient Color 3",
+      "default": "#fcb045"
+    },
+    {
+      "type": "header",
+      "content": "Grid Layout"
+    },
+    {
+      "type": "range",
+      "id": "grid_gap",
+      "min": 1,
+      "max": 20,
+      "step": 1,
+      "unit": "px",
+      "label": "Gap between images",
+      "default": 1
+    },
+    {
+      "type": "select",
+      "id": "columns_mobile",
+      "label": "Number of columns on mobile",
+      "options": [
+        {
+          "value": "1",
+          "label": "1 column"
+        },
+        {
+          "value": "2",
+          "label": "2 columns"
+        },
+        {
+          "value": "3",
+          "label": "3 columns"
+        }
+      ],
+      "default": "3"
+    },
+    {
+      "type": "select",
+      "id": "columns_desktop",
+      "label": "Number of columns on desktop",
+      "options": [
+        {
+          "value": "3",
+          "label": "3 columns"
+        },
+        {
+          "value": "4",
+          "label": "4 columns"
+        },
+        {
+          "value": "5",
+          "label": "5 columns"
+        }
+      ],
+      "default": "3"
+    },
+    {
+      "type": "header",
+      "content": "Image Settings"
+    },
+    {
+      "type": "checkbox",
+      "id": "natural_aspect_ratio",
+      "label": "Natural Image Aspect Ratio",
+      "default": false,
+      "info": "When enabled, images with taller dimensions (like 3:2 or 4:3) will show at their natural aspect ratio instead of being cropped to squares. This allows you to see the full image without cropping. Works best when most images have similar aspect ratios."
+    },
+    {
+      "type": "select",
+      "id": "image_position",
+      "label": "Default image position",
+      "options": [
+        {
+          "value": "center center",
+          "label": "Center"
+        },
+        {
+          "value": "top center",
+          "label": "Top"
+        },
+        {
+          "value": "bottom center",
+          "label": "Bottom"
+        },
+        {
+          "value": "left center",
+          "label": "Left"
+        },
+        {
+          "value": "right center",
+          "label": "Right"
+        }
+      ],
+      "default": "center center",
+      "info": "Sets the default focal point when using 'cover' fit"
+    },
+    {
+      "type": "checkbox",
+      "id": "show_image_caption",
+      "label": "Show image captions",
+      "default": false
+    },
+    {
+      "type": "header",
+      "content": "Image Border Styling"
+    },
+    {
+      "type": "range",
+      "id": "border_width",
+      "min": 0,
+      "max": 10,
+      "step": 1,
+      "unit": "px",
+      "label": "Border width",
+      "default": 1
+    },
+    {
+      "type": "color",
+      "id": "border_color",
+      "label": "Border color",
+      "default": "#dddddd"
+    },
+    {
+      "type": "range",
+      "id": "border_radius",
+      "min": 0,
+      "max": 20,
+      "step": 1,
+      "unit": "px",
+      "label": "Border radius",
+      "default": 0
+    },
+    {
+      "type": "checkbox",
+      "id": "use_gradient_border_photos",
+      "label": "Use gradient border for photos",
+      "default": false,
+      "info": "Apply gradient borders matching the selected social media platform colors"
+    },
+    {
+      "type": "header",
+      "content": "Section Spacing"
+    },
+    {
+      "type": "range",
+      "id": "padding_top",
+      "min": 0,
+      "max": 100,
+      "step": 5,
+      "unit": "px",
+      "label": "Top Padding",
+      "default": 30
+    },
+    {
+      "type": "range",
+      "id": "padding_bottom",
+      "min": 0,
+      "max": 100,
+      "step": 5,
+      "unit": "px",
+      "label": "Bottom Padding",
+      "default": 30
+    },
+    {
+      "type": "range",
+      "id": "padding_horizontal",
+      "min": 0,
+      "max": 80,
+      "step": 5,
+      "unit": "px",
+      "label": "Horizontal Padding",
+      "default": 30
+    },
+    {
+      "type": "range",
+      "id": "section_border_radius",
+      "min": 0,
+      "max": 50,
+      "step": 1,
+      "unit": "px",
+      "label": "Section Border Radius",
+      "default": 0,
+      "info": "Adds rounded corners to the entire section"
+    },
+    {
+      "type": "header",
+      "content": "Section Background"
+    },
+    {
+      "type": "color",
+      "id": "section_bg_color",
+      "label": "Background color",
+      "default": "#ffffff"
+    }
+  ],
+  "blocks": [
+    {
+      "type": "image_item",
+      "name": "Image",
+      "limit": 30,
+      "settings": [
+        {
+          "type": "header",
+          "content": "Image Content"
+        },
+        {
+          "type": "image_picker",
+          "id": "image",
+          "label": "Image"
+        },
+        {
+          "type": "select",
+          "id": "custom_position",
+          "label": "Image position",
+          "options": [
+            {
+              "value": "",
+              "label": "Use section default"
+            },
+            {
+              "value": "center center",
+              "label": "Center"
+            },
+            {
+              "value": "top center",
+              "label": "Top"
+            },
+            {
+              "value": "bottom center",
+              "label": "Bottom"
+            },
+            {
+              "value": "left center",
+              "label": "Left"
+            },
+            {
+              "value": "right center",
+              "label": "Right"
+            },
+            {
+              "value": "top left",
+              "label": "Top left"
+            },
+            {
+              "value": "top right",
+              "label": "Top right"
+            },
+            {
+              "value": "bottom left",
+              "label": "Bottom left"
+            },
+            {
+              "value": "bottom right",
+              "label": "Bottom right"
+            }
+          ],
+          "default": "",
+          "info": "Controls which part of the image is visible. Leave as default to use section setting."
+        },
+        {
+          "type": "url",
+          "id": "link",
+          "label": "Link (Optional)"
+        },
+        {
+          "type": "text",
+          "id": "caption",
+          "label": "Caption (Optional)"
+        }
+      ]
+    }
+  ],
+  "presets": [
+    {
+      "name": "Photo Grid",
+      "blocks": [
+        {
+          "type": "image_item"
+        },
+        {
+          "type": "image_item"
+        },
+        {
+          "type": "image_item"
+        },
+        {
+          "type": "image_item"
+        },
+        {
+          "type": "image_item"
+        },
+        {
+          "type": "image_item"
+        },
+        {
+          "type": "image_item"
+        },
+        {
+          "type": "image_item"
+        },
+        {
+          "type": "image_item"
+        }
+      ]
+    }
+  ]
+}
