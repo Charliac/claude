@@ -143,7 +143,7 @@ dv_ids, _ = schema_ids(dv_schema)
 def divider():
     s = {k: v for k, v in {
         'use_theme_colors': False, 'color': P['accent'],
-        'background_color': 'rgba(0,0,0,0)', 'height': 24,
+        'background_color': 'rgba(0,0,0,0)', 'height': 25,
         'show_border': False, 'use_gradient': False, 'keep_proportion': True,
         'padding_top': 0, 'padding_bottom': 0,
     }.items() if k in dv_ids}
